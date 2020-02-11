@@ -1,7 +1,7 @@
-'''PyTorch CUB-200-2011 Training without pre_trained model.'''
+'''PyTorch CUB-200-2011 Training with VGG16 (TRAINED FROM SCRATCH).'''
 from __future__ import print_function
 import os
-os.environ["CUDA_VISIBLE_DEVICES"] = "2"
+os.environ["CUDA_VISIBLE_DEVICES"] = "3"
 import time
 import torch
 import logging
@@ -18,7 +18,7 @@ import torchvision
 from my_pooling import my_MaxPool2d,my_AvgPool2d
 import torchvision.transforms as transforms
 logging.basicConfig(level=logging.INFO)
-parser = argparse.ArgumentParser(description='PyTorch CUB-200-2011 Training without pre_trained model')
+parser = argparse.ArgumentParser(description='PyTorch CUB-200-2011 Training with VGG16 (TRAINED FROM SCRATCH)')
 parser.add_argument('--lr', default=0.1, type=float, help='learning rate')
 parser.add_argument('--resume', '-r', default=False, type=bool, help='resume from checkpoint')
 args = parser.parse_args()
@@ -79,12 +79,12 @@ transform_test = transforms.Compose([
 
 
 
-trainset    = torchvision.datasets.ImageFolder(root='/home/changdongliang/data/Birds2/train', transform=transform_train)
+trainset    = torchvision.datasets.ImageFolder(root='/data/CUB-200-2011/train', transform=transform_train)
 trainloader = torch.utils.data.DataLoader(trainset, batch_size=32, shuffle=True, num_workers=4)
 
 
 
-testset = torchvision.datasets.ImageFolder(root='/home/changdongliang/data/Birds2/test', transform=transform_test)
+testset = torchvision.datasets.ImageFolder(root='/data/CUB-200-2011/test', transform=transform_test)
 testloader = torch.utils.data.DataLoader(testset, batch_size=32, shuffle=True, num_workers=4)
 
 
@@ -333,7 +333,6 @@ for epoch in range(1, nb_epoch+1):
     if val_acc >max_val_acc:
         max_val_acc = val_acc
         torch.save(net.state_dict(), store_name+'.pth')
-
 
 print(max_val_acc)
 
