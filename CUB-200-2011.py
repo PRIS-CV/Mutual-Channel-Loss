@@ -1,4 +1,4 @@
-'''Train CUB-200-2011 with PyTorch.'''
+'''PyTorch CUB-200-2011 Training without pre_trained model.'''
 from __future__ import print_function
 import os
 os.environ["CUDA_VISIBLE_DEVICES"] = "2"
@@ -18,7 +18,7 @@ import torchvision
 from my_pooling import my_MaxPool2d,my_AvgPool2d
 import torchvision.transforms as transforms
 logging.basicConfig(level=logging.INFO)
-parser = argparse.ArgumentParser(description='PyTorch CIFAR10 Training')
+parser = argparse.ArgumentParser(description='PyTorch CUB-200-2011 Training without pre_trained model')
 parser.add_argument('--lr', default=0.1, type=float, help='learning rate')
 parser.add_argument('--resume', '-r', default=False, type=bool, help='resume from checkpoint')
 args = parser.parse_args()
