@@ -20,12 +20,15 @@ Code release for The Devil is in the Channels: Mutual-Channel Loss for Fine-Grai
 ## Citation
 please cite:
 ```
-@article{chang2020mutualchannel,
-  title={The Devil is in the Channels: Mutual-Channel Loss for Fine-Grained Image Classification},
-  author={Chang, Dongliang and Ding, Yifeng and Xie, Jiyang and Ayan Kumar Bhunia and Li, Xiaoxu and Ma, Zhanyu and Wu, Ming and Guo, Jun and Song, Yi-Zhe },
-  journal={IEEE Transactions on Image Processing},
-  year={2020},
-  publisher={IEEE}
+@ARTICLE{chang2020mutualchannel,
+author={D. {Chang} and Y. {Ding} and J. {Xie} and A. K. {Bhunia} and X. {Li} and Z. {Ma} and M. {Wu} and J. {Guo} and Y. {Song}},
+journal={IEEE Transactions on Image Processing},
+title={The Devil is in the Channels: Mutual-Channel Loss for Fine-Grained Image Classification},
+year={2020},
+pages={1-1},
+keywords={Fine-grained image classification;deep learning;loss function;mutual channel},
+doi={10.1109/TIP.2020.2973812},
+ISSN={1941-0042}
 }
 ```
 
