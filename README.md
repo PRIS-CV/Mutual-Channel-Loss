@@ -1,6 +1,8 @@
 # The Devil is in the Channels: Mutual-Channel Loss for Fine-Grained Image Classification
 
 Code release for The Devil is in the Channels: Mutual-Channel Loss for Fine-Grained Image Classification (TIP 2020)
+[DOI](https://doi.org/10.1109/TIP.2020.2973812 "DOI")
+
 
 ## Dataset
 ### CUB-200-2011
