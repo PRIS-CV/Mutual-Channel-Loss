@@ -23,7 +23,8 @@ Code release for The Devil is in the Channels: Mutual-Channel Loss for Fine-Grai
 please cite:
 ```
 @ARTICLE{9005389, 
-author={D. {Chang} and Y. {Ding} and J. {Xie} and A. K. {Bhunia} and X. {Li} and Z. {Ma} and M. {Wu} and J. {Guo} and Y. {Song}}, journal={IEEE Transactions on Image Processing}, 
+author={D. {Chang} and Y. {Ding} and J. {Xie} and A. K. {Bhunia} and X. {Li} and Z. {Ma} and M. {Wu} and J. {Guo} and Y. {Song}}, 
+journal={IEEE Transactions on Image Processing}, 
 title={The Devil is in the Channels: Mutual-Channel Loss for Fine-Grained Image Classification}, year={2020}, volume={29}, number={}, 
 year={2020},
 pages={4683-4695}, 
