@@ -213,10 +213,17 @@ net =model_bn(net, 512, 200)
 
 
 
+# if use_cuda:
+#     net.cuda()
+#     cudnn.benchmark = True
+    
 if use_cuda:
-    net.cuda()
-    cudnn.benchmark = True
+    net.classifier.cuda()
+    net.features.cuda()
+    net.classifier = torch.nn.DataParallel(net.classifier)
+    net.features = torch.nn.DataParallel(net.features)
 
+    cudnn.benchmark = True
 
 criterion = nn.CrossEntropyLoss()
 
