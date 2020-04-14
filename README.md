@@ -5,7 +5,7 @@ Code release for The Devil is in the Channels: Mutual-Channel Loss for Fine-Grai
 
 
 ## Changelog
-2020/04/15 Upload the pre-trained ResNet50 model.
+2020/04/13 Upload the pre-trained ResNet50 model and output information.
 
 ## Dataset
 ### CUB-200-2011
