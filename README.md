@@ -4,6 +4,9 @@ Code release for The Devil is in the Channels: Mutual-Channel Loss for Fine-Grai
 [DOI](https://doi.org/10.1109/TIP.2020.2973812 "DOI")
 
 
+## Changelog
+2020/04/15 Upload the pre-trained ResNet50 model.
+
 ## Dataset
 ### CUB-200-2011
 
@@ -19,8 +22,11 @@ Code release for The Devil is in the Channels: Mutual-Channel Loss for Fine-Grai
 - Train: `python CUB-200-2011.py`, the alpha is the hyper-parameters of the  `MC-Loss`
 - Description : PyTorch CUB-200-2011 Training with VGG16 (TRAINED FROM SCRATCH).
 
+- Train: `python MC_ResNet50.py`, the alpha is the hyper-parameters of the  `MC-Loss`
+- Description : PyTorch CUB-200-2011 Training with ResNet50 (USING THE PRE-TRAINED MODEL).
+
 ## Citation
-please cite:
+If you find this paper useful in your research, please consider citing:
 ```
 @ARTICLE{9005389, 
 author={D. {Chang} and Y. {Ding} and J. {Xie} and A. K. {Bhunia} and X. {Li} and Z. {Ma} and M. {Wu} and J. {Guo} and Y. {Song}}, 
@@ -35,8 +41,8 @@ month={},}
 ```
 
 
-
-
 ## Contact
+Thanks for your attention!
+If you have any suggestion or question, you can leave a message here or contact us directly:
 - changdongliang@bupt.edu.cn
 - mazhanyu@bupt.edu.cn
