@@ -1,0 +1,2109 @@
+nohup: ignoring input
+INFO:root:Namespace(lr=0.1, resume=False)
+INFO:root:OPENING R_MC_7/results_train.csv
+INFO:root:OPENING R_MC_7/results_test.csv
+torch.Size([3, 69, 7, 7])
+==> Preparing data..
+==> Building model..
+0.09999725846827562
+0.009999725846827562
+
+Epoch: 1
+/home/changdongliang/anaconda3/lib/python3.6/site-packages/torch/tensor.py:293: UserWarning: non-inplace resize is deprecated
+  warnings.warn("non-inplace resize is deprecated")
+INFO:root:Iteration 1, train_acc = 31.56922,train_loss = 2.990225
+INFO:root:test1, test_acc = 28.9931,test_loss = 3.2034
+max_val_acc 28.993055555555557
+0.09998903417374227
+0.009998903417374227
+
+Epoch: 2
+INFO:root:Iteration 2, train_acc = 59.97984,train_loss = 1.488015
+INFO:root:test1, test_acc = 63.2639,test_loss = 1.3855
+max_val_acc 63.263888888888886
+0.09997532801828658
+0.009997532801828659
+
+Epoch: 3
+INFO:root:Iteration 3, train_acc = 74.74798,train_loss = 0.876470
+INFO:root:test1, test_acc = 64.6875,test_loss = 1.3469
+max_val_acc 64.6875
+0.09995614150494292
+0.009995614150494292
+
+Epoch: 4
+INFO:root:Iteration 4, train_acc = 82.57728,train_loss = 0.591905
+INFO:root:test1, test_acc = 72.8819,test_loss = 1.0657
+max_val_acc 72.88194444444444
+0.09993147673772869
+0.009993147673772868
+
+Epoch: 5
+INFO:root:Iteration 5, train_acc = 86.62634,train_loss = 0.450948
+INFO:root:test1, test_acc = 73.9236,test_loss = 0.9829
+max_val_acc 73.92361111111111
+0.09990133642141358
+0.009990133642141357
+
+Epoch: 6
+INFO:root:Iteration 6, train_acc = 90.67540,train_loss = 0.317295
+INFO:root:test1, test_acc = 75.4514,test_loss = 0.9772
+max_val_acc 75.45138888888889
+0.0998657238612229
+0.00998657238612229
+
+Epoch: 7
+INFO:root:Iteration 7, train_acc = 93.71640,train_loss = 0.230674
+INFO:root:test1, test_acc = 77.3958,test_loss = 0.8838
+max_val_acc 77.39583333333333
+0.09982464296247523
+0.009982464296247523
+
+Epoch: 8
+INFO:root:Iteration 8, train_acc = 95.85013,train_loss = 0.164016
+INFO:root:test1, test_acc = 76.9444,test_loss = 0.9262
+max_val_acc 77.39583333333333
+0.099778098230154
+0.0099778098230154
+
+Epoch: 9
+INFO:root:Iteration 9, train_acc = 97.47984,train_loss = 0.118012
+INFO:root:test1, test_acc = 79.2708,test_loss = 0.8257
+max_val_acc 79.27083333333333
+0.09972609476841367
+0.009972609476841367
+
+Epoch: 10
+INFO:root:Iteration 10, train_acc = 98.58871,train_loss = 0.082314
+INFO:root:test1, test_acc = 80.6944,test_loss = 0.7701
+max_val_acc 80.69444444444444
+0.09966863828001982
+0.009966863828001982
+
+Epoch: 11
+INFO:root:Iteration 11, train_acc = 99.00874,train_loss = 0.068264
+INFO:root:test1, test_acc = 81.9618,test_loss = 0.7330
+max_val_acc 81.96180555555556
+0.0996057350657239
+0.00996057350657239
+
+Epoch: 12
+INFO:root:Iteration 12, train_acc = 99.32796,train_loss = 0.056068
+INFO:root:test1, test_acc = 83.0903,test_loss = 0.6918
+max_val_acc 83.09027777777777
+0.09953739202357219
+0.00995373920235722
+
+Epoch: 13
+INFO:root:Iteration 13, train_acc = 99.63038,train_loss = 0.045723
+INFO:root:test1, test_acc = 83.1597,test_loss = 0.6670
+max_val_acc 83.15972222222223
+0.09946361664814943
+0.009946361664814943
+
+Epoch: 14
+INFO:root:Iteration 14, train_acc = 99.86559,train_loss = 0.036545
+INFO:root:test1, test_acc = 84.0278,test_loss = 0.6435
+max_val_acc 84.02777777777777
+0.0993844170297569
+0.009938441702975689
+
+Epoch: 15
+INFO:root:Iteration 15, train_acc = 99.74798,train_loss = 0.039035
+INFO:root:test1, test_acc = 83.8021,test_loss = 0.6619
+max_val_acc 84.02777777777777
+0.09929980185352526
+0.009929980185352526
+
+Epoch: 16
+INFO:root:Iteration 16, train_acc = 99.84879,train_loss = 0.038214
+INFO:root:test1, test_acc = 84.1146,test_loss = 0.6439
+max_val_acc 84.11458333333333
+0.0992097803984621
+0.00992097803984621
+
+Epoch: 17
+INFO:root:Iteration 17, train_acc = 99.89919,train_loss = 0.033721
+INFO:root:test1, test_acc = 84.9653,test_loss = 0.6301
+max_val_acc 84.96527777777777
+0.09911436253643445
+0.009911436253643446
+
+Epoch: 18
+INFO:root:Iteration 18, train_acc = 99.93280,train_loss = 0.032911
+INFO:root:test1, test_acc = 84.9132,test_loss = 0.6186
+max_val_acc 84.96527777777777
+0.0990135587310861
+0.00990135587310861
+
+Epoch: 19
+INFO:root:Iteration 19, train_acc = 100.00000,train_loss = 0.030770
+INFO:root:test1, test_acc = 85.5556,test_loss = 0.6100
+max_val_acc 85.55555555555556
+0.09890738003669029
+0.00989073800366903
+
+Epoch: 20
+INFO:root:Iteration 20, train_acc = 99.96640,train_loss = 0.031201
+INFO:root:test1, test_acc = 85.5035,test_loss = 0.6177
+max_val_acc 85.55555555555556
+0.09879583809693737
+0.009879583809693736
+
+Epoch: 21
+INFO:root:Iteration 21, train_acc = 99.94960,train_loss = 0.032578
+INFO:root:test1, test_acc = 85.3819,test_loss = 0.6160
+max_val_acc 85.55555555555556
+0.09867894514365802
+0.009867894514365802
+
+Epoch: 22
+INFO:root:Iteration 22, train_acc = 99.94960,train_loss = 0.031447
+INFO:root:test1, test_acc = 85.5035,test_loss = 0.6107
+max_val_acc 85.55555555555556
+0.09855671399548181
+0.009855671399548181
+
+Epoch: 23
+INFO:root:Iteration 23, train_acc = 100.00000,train_loss = 0.029879
+INFO:root:test1, test_acc = 85.6771,test_loss = 0.6050
+max_val_acc 85.67708333333333
+0.09842915805643156
+0.009842915805643155
+
+Epoch: 24
+INFO:root:Iteration 24, train_acc = 100.00000,train_loss = 0.029926
+INFO:root:test1, test_acc = 85.9201,test_loss = 0.6057
+max_val_acc 85.92013888888889
+0.09829629131445342
+0.009829629131445342
+
+Epoch: 25
+INFO:root:Iteration 25, train_acc = 100.00000,train_loss = 0.029308
+INFO:root:test1, test_acc = 85.9549,test_loss = 0.6060
+max_val_acc 85.95486111111111
+0.09815812833988291
+0.009815812833988292
+
+Epoch: 26
+INFO:root:Iteration 26, train_acc = 99.98320,train_loss = 0.028519
+INFO:root:test1, test_acc = 86.0069,test_loss = 0.6053
+max_val_acc 86.00694444444444
+0.09801468428384716
+0.009801468428384716
+
+Epoch: 27
+INFO:root:Iteration 27, train_acc = 99.94960,train_loss = 0.030421
+INFO:root:test1, test_acc = 85.9722,test_loss = 0.6092
+max_val_acc 86.00694444444444
+0.09786597487660337
+0.009786597487660337
+
+Epoch: 28
+INFO:root:Iteration 28, train_acc = 100.00000,train_loss = 0.029161
+INFO:root:test1, test_acc = 85.8681,test_loss = 0.6066
+max_val_acc 86.00694444444444
+0.09771201642581384
+0.009771201642581384
+
+Epoch: 29
+INFO:root:Iteration 29, train_acc = 100.00000,train_loss = 0.030322
+INFO:root:test1, test_acc = 85.0868,test_loss = 0.6203
+max_val_acc 86.00694444444444
+0.09755282581475769
+0.009755282581475769
+
+Epoch: 30
+INFO:root:Iteration 30, train_acc = 100.00000,train_loss = 0.028243
+INFO:root:test1, test_acc = 85.8333,test_loss = 0.6137
+max_val_acc 86.00694444444444
+0.0973884205004793
+0.00973884205004793
+
+Epoch: 31
+INFO:root:Iteration 31, train_acc = 100.00000,train_loss = 0.028571
+INFO:root:test1, test_acc = 86.0938,test_loss = 0.6091
+max_val_acc 86.09375
+0.09721881851187407
+0.009721881851187407
+
+Epoch: 32
+INFO:root:Iteration 32, train_acc = 100.00000,train_loss = 0.029522
+INFO:root:test1, test_acc = 86.1285,test_loss = 0.6227
+max_val_acc 86.12847222222223
+0.09704403844771128
+0.009704403844771128
+
+Epoch: 33
+INFO:root:Iteration 33, train_acc = 99.94960,train_loss = 0.029150
+INFO:root:test1, test_acc = 86.1806,test_loss = 0.6157
+max_val_acc 86.18055555555556
+0.09686409947459458
+0.009686409947459458
+
+Epoch: 34
+INFO:root:Iteration 34, train_acc = 100.00000,train_loss = 0.027472
+INFO:root:test1, test_acc = 85.9375,test_loss = 0.6169
+max_val_acc 86.18055555555556
+0.09667902132486009
+0.009667902132486009
+
+Epoch: 35
+INFO:root:Iteration 35, train_acc = 100.00000,train_loss = 0.027595
+INFO:root:test1, test_acc = 85.7812,test_loss = 0.6263
+max_val_acc 86.18055555555556
+0.09648882429441258
+0.009648882429441258
+
+Epoch: 36
+INFO:root:Iteration 36, train_acc = 99.98320,train_loss = 0.027896
+INFO:root:test1, test_acc = 86.0938,test_loss = 0.6189
+max_val_acc 86.18055555555556
+0.09629352924049975
+0.009629352924049974
+
+Epoch: 37
+INFO:root:Iteration 37, train_acc = 99.98320,train_loss = 0.027185
+INFO:root:test1, test_acc = 85.7812,test_loss = 0.6301
+max_val_acc 86.18055555555556
+0.09609315757942503
+0.009609315757942504
+
+Epoch: 38
+INFO:root:Iteration 38, train_acc = 100.00000,train_loss = 0.028186
+INFO:root:test1, test_acc = 85.8854,test_loss = 0.6297
+max_val_acc 86.18055555555556
+0.09588773128419906
+0.009588773128419905
+
+Epoch: 39
+INFO:root:Iteration 39, train_acc = 100.00000,train_loss = 0.027527
+INFO:root:test1, test_acc = 85.9375,test_loss = 0.6249
+max_val_acc 86.18055555555556
+0.09567727288213004
+0.009567727288213004
+
+Epoch: 40
+INFO:root:Iteration 40, train_acc = 100.00000,train_loss = 0.025982
+INFO:root:test1, test_acc = 86.1285,test_loss = 0.6280
+max_val_acc 86.18055555555556
+0.09546180545235344
+0.009546180545235344
+
+Epoch: 41
+INFO:root:Iteration 41, train_acc = 100.00000,train_loss = 0.026476
+INFO:root:test1, test_acc = 85.8333,test_loss = 0.6241
+max_val_acc 86.18055555555556
+0.09524135262330098
+0.009524135262330098
+
+Epoch: 42
+INFO:root:Iteration 42, train_acc = 100.00000,train_loss = 0.025975
+INFO:root:test1, test_acc = 86.0764,test_loss = 0.6309
+max_val_acc 86.18055555555556
+0.09501593857010969
+0.009501593857010968
+
+Epoch: 43
+INFO:root:Iteration 43, train_acc = 100.00000,train_loss = 0.025691
+INFO:root:test1, test_acc = 85.9722,test_loss = 0.6335
+max_val_acc 86.18055555555556
+0.09478558801197065
+0.009478558801197065
+
+Epoch: 44
+INFO:root:Iteration 44, train_acc = 100.00000,train_loss = 0.026648
+INFO:root:test1, test_acc = 86.0069,test_loss = 0.6337
+max_val_acc 86.18055555555556
+0.09455032620941839
+0.009455032620941838
+
+Epoch: 45
+INFO:root:Iteration 45, train_acc = 100.00000,train_loss = 0.025211
+INFO:root:test1, test_acc = 86.4757,test_loss = 0.6176
+max_val_acc 86.47569444444444
+0.09431017896156074
+0.009431017896156075
+
+Epoch: 46
+INFO:root:Iteration 46, train_acc = 100.00000,train_loss = 0.026335
+INFO:root:test1, test_acc = 86.5799,test_loss = 0.6269
+max_val_acc 86.57986111111111
+0.0940651726032496
+0.009406517260324961
+
+Epoch: 47
+INFO:root:Iteration 47, train_acc = 100.00000,train_loss = 0.025358
+INFO:root:test1, test_acc = 86.0069,test_loss = 0.6300
+max_val_acc 86.57986111111111
+0.09381533400219318
+0.009381533400219317
+
+Epoch: 48
+INFO:root:Iteration 48, train_acc = 100.00000,train_loss = 0.027015
+INFO:root:test1, test_acc = 86.1111,test_loss = 0.6451
+max_val_acc 86.57986111111111
+0.09356069055600948
+0.009356069055600947
+
+Epoch: 49
+INFO:root:Iteration 49, train_acc = 100.00000,train_loss = 0.026438
+INFO:root:test1, test_acc = 86.8576,test_loss = 0.6161
+max_val_acc 86.85763888888889
+0.09330127018922194
+0.009330127018922194
+
+Epoch: 50
+INFO:root:Iteration 50, train_acc = 100.00000,train_loss = 0.025808
+INFO:root:test1, test_acc = 86.0590,test_loss = 0.6352
+max_val_acc 86.85763888888889
+0.09303710135019719
+0.009303710135019719
+
+Epoch: 51
+INFO:root:Iteration 51, train_acc = 100.00000,train_loss = 0.025568
+INFO:root:test1, test_acc = 86.0069,test_loss = 0.6329
+max_val_acc 86.85763888888889
+0.09276821300802535
+0.009276821300802535
+
+Epoch: 52
+INFO:root:Iteration 52, train_acc = 100.00000,train_loss = 0.027250
+INFO:root:test1, test_acc = 86.1458,test_loss = 0.6369
+max_val_acc 86.85763888888889
+0.09249463464934321
+0.009249463464934321
+
+Epoch: 53
+INFO:root:Iteration 53, train_acc = 100.00000,train_loss = 0.026869
+INFO:root:test1, test_acc = 85.8160,test_loss = 0.6523
+max_val_acc 86.85763888888889
+0.09221639627510075
+0.009221639627510075
+
+Epoch: 54
+INFO:root:Iteration 54, train_acc = 100.00000,train_loss = 0.025684
+INFO:root:test1, test_acc = 86.1632,test_loss = 0.6290
+max_val_acc 86.85763888888889
+0.0919335283972712
+0.00919335283972712
+
+Epoch: 55
+INFO:root:Iteration 55, train_acc = 99.98320,train_loss = 0.024976
+INFO:root:test1, test_acc = 86.4236,test_loss = 0.6393
+max_val_acc 86.85763888888889
+0.09164606203550497
+0.009164606203550498
+
+Epoch: 56
+INFO:root:Iteration 56, train_acc = 100.00000,train_loss = 0.026163
+INFO:root:test1, test_acc = 86.4583,test_loss = 0.6295
+max_val_acc 86.85763888888889
+0.0913540287137281
+0.00913540287137281
+
+Epoch: 57
+INFO:root:Iteration 57, train_acc = 99.91599,train_loss = 0.032583
+INFO:root:test1, test_acc = 85.4514,test_loss = 0.6660
+max_val_acc 86.85763888888889
+0.09105746045668521
+0.00910574604566852
+
+Epoch: 58
+INFO:root:Iteration 58, train_acc = 99.94960,train_loss = 0.031279
+INFO:root:test1, test_acc = 85.6944,test_loss = 0.6381
+max_val_acc 86.85763888888889
+0.09075638978642771
+0.009075638978642771
+
+Epoch: 59
+INFO:root:Iteration 59, train_acc = 100.00000,train_loss = 0.025280
+INFO:root:test1, test_acc = 86.1458,test_loss = 0.6404
+max_val_acc 86.85763888888889
+0.09045084971874738
+0.009045084971874739
+
+Epoch: 60
+INFO:root:Iteration 60, train_acc = 100.00000,train_loss = 0.023623
+INFO:root:test1, test_acc = 85.8507,test_loss = 0.6406
+max_val_acc 86.85763888888889
+0.09014087375955573
+0.009014087375955573
+
+Epoch: 61
+INFO:root:Iteration 61, train_acc = 100.00000,train_loss = 0.024032
+INFO:root:test1, test_acc = 86.2674,test_loss = 0.6387
+max_val_acc 86.85763888888889
+0.08982649590120982
+0.008982649590120982
+
+Epoch: 62
+INFO:root:Iteration 62, train_acc = 100.00000,train_loss = 0.023571
+INFO:root:test1, test_acc = 86.8056,test_loss = 0.6256
+max_val_acc 86.85763888888889
+0.08950775061878452
+0.008950775061878451
+
+Epoch: 63
+INFO:root:Iteration 63, train_acc = 100.00000,train_loss = 0.023560
+INFO:root:test1, test_acc = 85.8333,test_loss = 0.6411
+max_val_acc 86.85763888888889
+0.089184672866292
+0.0089184672866292
+
+Epoch: 64
+INFO:root:Iteration 64, train_acc = 100.00000,train_loss = 0.024168
+INFO:root:test1, test_acc = 86.3889,test_loss = 0.6308
+max_val_acc 86.85763888888889
+0.08885729807284855
+0.008885729807284855
+
+Epoch: 65
+INFO:root:Iteration 65, train_acc = 100.00000,train_loss = 0.023493
+INFO:root:test1, test_acc = 86.5278,test_loss = 0.6341
+max_val_acc 86.85763888888889
+0.08852566213878947
+0.008852566213878947
+
+Epoch: 66
+INFO:root:Iteration 66, train_acc = 100.00000,train_loss = 0.023142
+INFO:root:test1, test_acc = 86.6667,test_loss = 0.6299
+max_val_acc 86.85763888888889
+0.08818980143173212
+0.008818980143173212
+
+Epoch: 67
+INFO:root:Iteration 67, train_acc = 100.00000,train_loss = 0.025207
+INFO:root:test1, test_acc = 86.2153,test_loss = 0.6470
+max_val_acc 86.85763888888889
+0.08784975278258783
+0.008784975278258783
+
+Epoch: 68
+INFO:root:Iteration 68, train_acc = 100.00000,train_loss = 0.026567
+INFO:root:test1, test_acc = 86.1979,test_loss = 0.6385
+max_val_acc 86.85763888888889
+0.08750555348152299
+0.008750555348152299
+
+Epoch: 69
+INFO:root:Iteration 69, train_acc = 100.00000,train_loss = 0.024233
+INFO:root:test1, test_acc = 86.4757,test_loss = 0.6354
+max_val_acc 86.85763888888889
+0.08715724127386973
+0.008715724127386974
+
+Epoch: 70
+INFO:root:Iteration 70, train_acc = 100.00000,train_loss = 0.023585
+INFO:root:test1, test_acc = 86.8576,test_loss = 0.6315
+max_val_acc 86.85763888888889
+0.08680485435598673
+0.008680485435598673
+
+Epoch: 71
+INFO:root:Iteration 71, train_acc = 100.00000,train_loss = 0.023080
+INFO:root:test1, test_acc = 86.6667,test_loss = 0.6317
+max_val_acc 86.85763888888889
+0.08644843137107058
+0.008644843137107058
+
+Epoch: 72
+INFO:root:Iteration 72, train_acc = 99.98320,train_loss = 0.024152
+INFO:root:test1, test_acc = 86.2153,test_loss = 0.6671
+max_val_acc 86.85763888888889
+0.08608801140491812
+0.008608801140491812
+
+Epoch: 73
+INFO:root:Iteration 73, train_acc = 99.98320,train_loss = 0.027036
+INFO:root:test1, test_acc = 86.5104,test_loss = 0.6351
+max_val_acc 86.85763888888889
+0.08572363398164018
+0.008572363398164019
+
+Epoch: 74
+INFO:root:Iteration 74, train_acc = 99.96640,train_loss = 0.025107
+INFO:root:test1, test_acc = 85.8160,test_loss = 0.6543
+max_val_acc 86.85763888888889
+0.08535533905932738
+0.008535533905932738
+
+Epoch: 75
+INFO:root:Iteration 75, train_acc = 100.00000,train_loss = 0.023871
+INFO:root:test1, test_acc = 86.9271,test_loss = 0.6417
+max_val_acc 86.92708333333333
+0.08498316702566829
+0.008498316702566828
+
+Epoch: 76
+INFO:root:Iteration 76, train_acc = 100.00000,train_loss = 0.022828
+INFO:root:test1, test_acc = 86.5799,test_loss = 0.6398
+max_val_acc 86.92708333333333
+0.08460715869352034
+0.008460715869352034
+
+Epoch: 77
+INFO:root:Iteration 77, train_acc = 100.00000,train_loss = 0.023025
+INFO:root:test1, test_acc = 86.7188,test_loss = 0.6298
+max_val_acc 86.92708333333333
+0.08422735529643444
+0.008422735529643444
+
+Epoch: 78
+INFO:root:Iteration 78, train_acc = 100.00000,train_loss = 0.022927
+INFO:root:test1, test_acc = 87.0486,test_loss = 0.6306
+max_val_acc 87.04861111111111
+0.08384379848413304
+0.008384379848413304
+
+Epoch: 79
+INFO:root:Iteration 79, train_acc = 99.94960,train_loss = 0.026693
+INFO:root:test1, test_acc = 85.1389,test_loss = 0.7199
+max_val_acc 87.04861111111111
+0.08345653031794292
+0.008345653031794293
+
+Epoch: 80
+INFO:root:Iteration 80, train_acc = 99.36156,train_loss = 0.074193
+INFO:root:test1, test_acc = 81.6667,test_loss = 0.8368
+max_val_acc 87.04861111111111
+0.0830655932661826
+0.00830655932661826
+
+Epoch: 81
+INFO:root:Iteration 81, train_acc = 99.51277,train_loss = 0.069657
+INFO:root:test1, test_acc = 81.9097,test_loss = 0.8273
+max_val_acc 87.04861111111111
+0.08267103019950528
+0.008267103019950529
+
+Epoch: 82
+INFO:root:Iteration 82, train_acc = 99.51277,train_loss = 0.055020
+INFO:root:test1, test_acc = 82.9514,test_loss = 0.7341
+max_val_acc 87.04861111111111
+0.08227288438619754
+0.008227288438619754
+
+Epoch: 83
+INFO:root:Iteration 83, train_acc = 99.91599,train_loss = 0.028317
+INFO:root:test1, test_acc = 84.2708,test_loss = 0.6793
+max_val_acc 87.04861111111111
+0.08187119948743449
+0.008187119948743448
+
+Epoch: 84
+INFO:root:Iteration 84, train_acc = 100.00000,train_loss = 0.021289
+INFO:root:test1, test_acc = 84.7222,test_loss = 0.6592
+max_val_acc 87.04861111111111
+0.08146601955249189
+0.008146601955249189
+
+Epoch: 85
+INFO:root:Iteration 85, train_acc = 99.94960,train_loss = 0.023675
+INFO:root:test1, test_acc = 84.7743,test_loss = 0.6705
+max_val_acc 87.04861111111111
+0.08105738901391553
+0.008105738901391553
+
+Epoch: 86
+INFO:root:Iteration 86, train_acc = 100.00000,train_loss = 0.021321
+INFO:root:test1, test_acc = 85.6944,test_loss = 0.6474
+max_val_acc 87.04861111111111
+0.08064535268264883
+0.008064535268264884
+
+Epoch: 87
+INFO:root:Iteration 87, train_acc = 100.00000,train_loss = 0.020499
+INFO:root:test1, test_acc = 85.9375,test_loss = 0.6312
+max_val_acc 87.04861111111111
+0.08022995574311875
+0.008022995574311876
+
+Epoch: 88
+INFO:root:Iteration 88, train_acc = 100.00000,train_loss = 0.020984
+INFO:root:test1, test_acc = 86.1806,test_loss = 0.6342
+max_val_acc 87.04861111111111
+0.0798112437482808
+0.007981124374828081
+
+Epoch: 89
+INFO:root:Iteration 89, train_acc = 100.00000,train_loss = 0.022271
+INFO:root:test1, test_acc = 86.2153,test_loss = 0.6419
+max_val_acc 87.04861111111111
+0.07938926261462366
+0.007938926261462366
+
+Epoch: 90
+INFO:root:Iteration 90, train_acc = 100.00000,train_loss = 0.022566
+INFO:root:test1, test_acc = 86.1806,test_loss = 0.6345
+max_val_acc 87.04861111111111
+0.07896405861713394
+0.007896405861713394
+
+Epoch: 91
+INFO:root:Iteration 91, train_acc = 100.00000,train_loss = 0.022061
+INFO:root:test1, test_acc = 86.3194,test_loss = 0.6384
+max_val_acc 87.04861111111111
+0.0785356783842216
+0.00785356783842216
+
+Epoch: 92
+INFO:root:Iteration 92, train_acc = 99.98320,train_loss = 0.023326
+INFO:root:test1, test_acc = 85.6424,test_loss = 0.6666
+max_val_acc 87.04861111111111
+0.07810416889260655
+0.007810416889260654
+
+Epoch: 93
+INFO:root:Iteration 93, train_acc = 100.00000,train_loss = 0.024378
+INFO:root:test1, test_acc = 86.3021,test_loss = 0.6394
+max_val_acc 87.04861111111111
+0.07766957746216721
+0.007766957746216721
+
+Epoch: 94
+INFO:root:Iteration 94, train_acc = 100.00000,train_loss = 0.022618
+INFO:root:test1, test_acc = 86.3889,test_loss = 0.6453
+max_val_acc 87.04861111111111
+0.07723195175075136
+0.007723195175075135
+
+Epoch: 95
+INFO:root:Iteration 95, train_acc = 100.00000,train_loss = 0.021903
+INFO:root:test1, test_acc = 86.3021,test_loss = 0.6418
+max_val_acc 87.04861111111111
+0.07679133974894983
+0.007679133974894984
+
+Epoch: 96
+INFO:root:Iteration 96, train_acc = 99.98320,train_loss = 0.024446
+INFO:root:test1, test_acc = 86.2326,test_loss = 0.6412
+max_val_acc 87.04861111111111
+0.07634778977483389
+0.007634778977483389
+
+Epoch: 97
+INFO:root:Iteration 97, train_acc = 100.00000,train_loss = 0.022147
+INFO:root:test1, test_acc = 86.5799,test_loss = 0.6397
+max_val_acc 87.04861111111111
+0.07590135046865652
+0.0075901350468656524
+
+Epoch: 98
+INFO:root:Iteration 98, train_acc = 100.00000,train_loss = 0.022134
+INFO:root:test1, test_acc = 86.4410,test_loss = 0.6443
+max_val_acc 87.04861111111111
+0.07545207078751857
+0.007545207078751857
+
+Epoch: 99
+INFO:root:Iteration 99, train_acc = 100.00000,train_loss = 0.022729
+INFO:root:test1, test_acc = 86.5451,test_loss = 0.6401
+max_val_acc 87.04861111111111
+0.07500000000000001
+0.0075000000000000015
+
+Epoch: 100
+INFO:root:Iteration 100, train_acc = 100.00000,train_loss = 0.022705
+INFO:root:test1, test_acc = 86.6319,test_loss = 0.6438
+max_val_acc 87.04861111111111
+0.07454518768075705
+0.007454518768075705
+
+Epoch: 101
+INFO:root:Iteration 101, train_acc = 100.00000,train_loss = 0.023202
+INFO:root:test1, test_acc = 86.8576,test_loss = 0.6427
+max_val_acc 87.04861111111111
+0.07408768370508577
+0.0074087683705085765
+
+Epoch: 102
+INFO:root:Iteration 102, train_acc = 100.00000,train_loss = 0.023134
+INFO:root:test1, test_acc = 86.6493,test_loss = 0.6496
+max_val_acc 87.04861111111111
+0.07362753824345271
+0.0073627538243452705
+
+Epoch: 103
+INFO:root:Iteration 103, train_acc = 99.98320,train_loss = 0.023372
+INFO:root:test1, test_acc = 86.0764,test_loss = 0.6705
+max_val_acc 87.04861111111111
+0.07316480175599309
+0.007316480175599309
+
+Epoch: 104
+INFO:root:Iteration 104, train_acc = 100.00000,train_loss = 0.023513
+INFO:root:test1, test_acc = 86.7361,test_loss = 0.6439
+max_val_acc 87.04861111111111
+0.07269952498697733
+0.007269952498697734
+
+Epoch: 105
+INFO:root:Iteration 105, train_acc = 100.00000,train_loss = 0.022827
+INFO:root:test1, test_acc = 86.5799,test_loss = 0.6511
+max_val_acc 87.04861111111111
+0.07223175895924637
+0.007223175895924637
+
+Epoch: 106
+INFO:root:Iteration 106, train_acc = 100.00000,train_loss = 0.022791
+INFO:root:test1, test_acc = 86.7708,test_loss = 0.6537
+max_val_acc 87.04861111111111
+0.07176155496861639
+0.007176155496861639
+
+Epoch: 107
+INFO:root:Iteration 107, train_acc = 100.00000,train_loss = 0.022765
+INFO:root:test1, test_acc = 86.5625,test_loss = 0.6449
+max_val_acc 87.04861111111111
+0.07128896457825364
+0.007128896457825364
+
+Epoch: 108
+INFO:root:Iteration 108, train_acc = 100.00000,train_loss = 0.022054
+INFO:root:test1, test_acc = 86.7882,test_loss = 0.6401
+max_val_acc 87.04861111111111
+0.07081403961302006
+0.007081403961302006
+
+Epoch: 109
+INFO:root:Iteration 109, train_acc = 100.00000,train_loss = 0.022859
+INFO:root:test1, test_acc = 86.6146,test_loss = 0.6559
+max_val_acc 87.04861111111111
+0.07033683215379001
+0.007033683215379001
+
+Epoch: 110
+INFO:root:Iteration 110, train_acc = 100.00000,train_loss = 0.022240
+INFO:root:test1, test_acc = 86.9444,test_loss = 0.6455
+max_val_acc 87.04861111111111
+0.06985739453173903
+0.006985739453173903
+
+Epoch: 111
+INFO:root:Iteration 111, train_acc = 100.00000,train_loss = 0.023814
+INFO:root:test1, test_acc = 86.4931,test_loss = 0.6528
+max_val_acc 87.04861111111111
+0.06937577932260515
+0.006937577932260515
+
+Epoch: 112
+INFO:root:Iteration 112, train_acc = 100.00000,train_loss = 0.022651
+INFO:root:test1, test_acc = 86.6319,test_loss = 0.6543
+max_val_acc 87.04861111111111
+0.06889203934092336
+0.0068892039340923365
+
+Epoch: 113
+INFO:root:Iteration 113, train_acc = 100.00000,train_loss = 0.022201
+INFO:root:test1, test_acc = 86.8576,test_loss = 0.6494
+max_val_acc 87.04861111111111
+0.06840622763423392
+0.0068406227634233915
+
+Epoch: 114
+INFO:root:Iteration 114, train_acc = 100.00000,train_loss = 0.022345
+INFO:root:test1, test_acc = 86.8576,test_loss = 0.6512
+max_val_acc 87.04861111111111
+0.06791839747726501
+0.006791839747726501
+
+Epoch: 115
+INFO:root:Iteration 115, train_acc = 100.00000,train_loss = 0.022249
+INFO:root:test1, test_acc = 86.6667,test_loss = 0.6479
+max_val_acc 87.04861111111111
+0.06742860236609076
+0.006742860236609076
+
+Epoch: 116
+INFO:root:Iteration 116, train_acc = 100.00000,train_loss = 0.022412
+INFO:root:test1, test_acc = 86.8576,test_loss = 0.6583
+max_val_acc 87.04861111111111
+0.06693689601226459
+0.0066936896012264584
+
+Epoch: 117
+INFO:root:Iteration 117, train_acc = 100.00000,train_loss = 0.021814
+INFO:root:test1, test_acc = 86.7882,test_loss = 0.6565
+max_val_acc 87.04861111111111
+0.06644333233692916
+0.006644333233692916
+
+Epoch: 118
+INFO:root:Iteration 118, train_acc = 100.00000,train_loss = 0.022350
+INFO:root:test1, test_acc = 86.4583,test_loss = 0.6577
+max_val_acc 87.04861111111111
+0.0659479654649035
+0.00659479654649035
+
+Epoch: 119
+INFO:root:Iteration 119, train_acc = 99.91599,train_loss = 0.025298
+INFO:root:test1, test_acc = 84.8438,test_loss = 0.7490
+max_val_acc 87.04861111111111
+0.06545084971874737
+0.006545084971874737
+
+Epoch: 120
+INFO:root:Iteration 120, train_acc = 100.00000,train_loss = 0.028890
+INFO:root:test1, test_acc = 86.5972,test_loss = 0.6653
+max_val_acc 87.04861111111111
+0.06495203961280434
+0.0064952039612804335
+
+Epoch: 121
+INFO:root:Iteration 121, train_acc = 100.00000,train_loss = 0.021897
+INFO:root:test1, test_acc = 86.7535,test_loss = 0.6545
+max_val_acc 87.04861111111111
+0.06445158984722359
+0.006445158984722359
+
+Epoch: 122
+INFO:root:Iteration 122, train_acc = 100.00000,train_loss = 0.021606
+INFO:root:test1, test_acc = 86.8576,test_loss = 0.6525
+max_val_acc 87.04861111111111
+0.06394955530196147
+0.006394955530196147
+
+Epoch: 123
+INFO:root:Iteration 123, train_acc = 100.00000,train_loss = 0.021383
+INFO:root:test1, test_acc = 86.9271,test_loss = 0.6551
+max_val_acc 87.04861111111111
+0.06344599103076329
+0.006344599103076329
+
+Epoch: 124
+INFO:root:Iteration 124, train_acc = 100.00000,train_loss = 0.021623
+INFO:root:test1, test_acc = 86.6840,test_loss = 0.6524
+max_val_acc 87.04861111111111
+0.06294095225512605
+0.0062940952255126055
+
+Epoch: 125
+INFO:root:Iteration 125, train_acc = 100.00000,train_loss = 0.022018
+INFO:root:test1, test_acc = 86.7361,test_loss = 0.6633
+max_val_acc 87.04861111111111
+0.062434494358242734
+0.006243449435824273
+
+Epoch: 126
+INFO:root:Iteration 126, train_acc = 100.00000,train_loss = 0.022489
+INFO:root:test1, test_acc = 86.8056,test_loss = 0.6598
+max_val_acc 87.04861111111111
+0.06192667287892905
+0.006192667287892905
+
+Epoch: 127
+INFO:root:Iteration 127, train_acc = 100.00000,train_loss = 0.022291
+INFO:root:test1, test_acc = 86.5104,test_loss = 0.6758
+max_val_acc 87.04861111111111
+0.061417543505532794
+0.006141754350553279
+
+Epoch: 128
+INFO:root:Iteration 128, train_acc = 100.00000,train_loss = 0.023440
+INFO:root:test1, test_acc = 86.5625,test_loss = 0.6618
+max_val_acc 87.04861111111111
+0.06090716206982714
+0.0060907162069827134
+
+Epoch: 129
+INFO:root:Iteration 129, train_acc = 100.00000,train_loss = 0.022176
+INFO:root:test1, test_acc = 86.6493,test_loss = 0.6667
+max_val_acc 87.04861111111111
+0.060395584540887975
+0.006039558454088797
+
+Epoch: 130
+INFO:root:Iteration 130, train_acc = 100.00000,train_loss = 0.021898
+INFO:root:test1, test_acc = 86.8056,test_loss = 0.6554
+max_val_acc 87.04861111111111
+0.0598828670189563
+0.00598828670189563
+
+Epoch: 131
+INFO:root:Iteration 131, train_acc = 100.00000,train_loss = 0.021918
+INFO:root:test1, test_acc = 86.9444,test_loss = 0.6563
+max_val_acc 87.04861111111111
+0.05936906572928624
+0.005936906572928624
+
+Epoch: 132
+INFO:root:Iteration 132, train_acc = 100.00000,train_loss = 0.022216
+INFO:root:test1, test_acc = 86.6493,test_loss = 0.6655
+max_val_acc 87.04861111111111
+0.05885423701597917
+0.005885423701597918
+
+Epoch: 133
+INFO:root:Iteration 133, train_acc = 100.00000,train_loss = 0.022150
+INFO:root:test1, test_acc = 86.7188,test_loss = 0.6572
+max_val_acc 87.04861111111111
+0.05833843733580512
+0.005833843733580512
+
+Epoch: 134
+INFO:root:Iteration 134, train_acc = 100.00000,train_loss = 0.021897
+INFO:root:test1, test_acc = 86.9444,test_loss = 0.6581
+max_val_acc 87.04861111111111
+0.05782172325201155
+0.0057821723252011546
+
+Epoch: 135
+INFO:root:Iteration 135, train_acc = 100.00000,train_loss = 0.021927
+INFO:root:test1, test_acc = 87.0833,test_loss = 0.6565
+max_val_acc 87.08333333333333
+0.05730415142812059
+0.005730415142812059
+
+Epoch: 136
+INFO:root:Iteration 136, train_acc = 100.00000,train_loss = 0.021531
+INFO:root:test1, test_acc = 86.8056,test_loss = 0.6619
+max_val_acc 87.08333333333333
+0.05678577862171522
+0.005678577862171522
+
+Epoch: 137
+INFO:root:Iteration 137, train_acc = 100.00000,train_loss = 0.022491
+INFO:root:test1, test_acc = 86.6146,test_loss = 0.6647
+max_val_acc 87.08333333333333
+0.056266661678215216
+0.005626666167821521
+
+Epoch: 138
+INFO:root:Iteration 138, train_acc = 100.00000,train_loss = 0.021789
+INFO:root:test1, test_acc = 86.8403,test_loss = 0.6629
+max_val_acc 87.08333333333333
+0.05574685752464334
+0.005574685752464334
+
+Epoch: 139
+INFO:root:Iteration 139, train_acc = 100.00000,train_loss = 0.021893
+INFO:root:test1, test_acc = 86.9965,test_loss = 0.6595
+max_val_acc 87.08333333333333
+0.05522642316338269
+0.005522642316338269
+
+Epoch: 140
+INFO:root:Iteration 140, train_acc = 100.00000,train_loss = 0.021583
+INFO:root:test1, test_acc = 86.8229,test_loss = 0.6693
+max_val_acc 87.08333333333333
+0.05470541566592573
+0.005470541566592573
+
+Epoch: 141
+INFO:root:Iteration 141, train_acc = 100.00000,train_loss = 0.022515
+INFO:root:test1, test_acc = 86.7708,test_loss = 0.6760
+max_val_acc 87.08333333333333
+0.05418389216661578
+0.0054183892166615785
+
+Epoch: 142
+INFO:root:Iteration 142, train_acc = 100.00000,train_loss = 0.022017
+INFO:root:test1, test_acc = 86.5625,test_loss = 0.6712
+max_val_acc 87.08333333333333
+0.053661909856381584
+0.005366190985638159
+
+Epoch: 143
+INFO:root:Iteration 143, train_acc = 100.00000,train_loss = 0.021943
+INFO:root:test1, test_acc = 86.9097,test_loss = 0.6668
+max_val_acc 87.08333333333333
+0.05313952597646568
+0.005313952597646568
+
+Epoch: 144
+INFO:root:Iteration 144, train_acc = 100.00000,train_loss = 0.022154
+INFO:root:test1, test_acc = 86.8576,test_loss = 0.6655
+max_val_acc 87.08333333333333
+0.052616797812147204
+0.0052616797812147205
+
+Epoch: 145
+INFO:root:Iteration 145, train_acc = 100.00000,train_loss = 0.021471
+INFO:root:test1, test_acc = 86.9792,test_loss = 0.6632
+max_val_acc 87.08333333333333
+0.05209378268645999
+0.005209378268645999
+
+Epoch: 146
+INFO:root:Iteration 146, train_acc = 100.00000,train_loss = 0.021848
+INFO:root:test1, test_acc = 86.8403,test_loss = 0.6717
+max_val_acc 87.08333333333333
+0.051570537953906405
+0.0051570537953906405
+
+Epoch: 147
+INFO:root:Iteration 147, train_acc = 100.00000,train_loss = 0.021713
+INFO:root:test1, test_acc = 87.0660,test_loss = 0.6650
+max_val_acc 87.08333333333333
+0.051047120994167854
+0.0051047120994167855
+
+Epoch: 148
+INFO:root:Iteration 148, train_acc = 100.00000,train_loss = 0.022039
+INFO:root:test1, test_acc = 86.8229,test_loss = 0.6715
+max_val_acc 87.08333333333333
+0.05052358920581229
+0.005052358920581229
+
+Epoch: 149
+INFO:root:Iteration 149, train_acc = 100.00000,train_loss = 0.021967
+INFO:root:test1, test_acc = 86.8750,test_loss = 0.6738
+max_val_acc 87.08333333333333
+0.05
+0.005
+
+Epoch: 150
+INFO:root:Iteration 150, train_acc = 100.00000,train_loss = 0.021283
+INFO:root:test1, test_acc = 86.9792,test_loss = 0.6688
+max_val_acc 87.08333333333333
+0.049476410794187714
+0.004947641079418771
+
+Epoch: 151
+INFO:root:Iteration 151, train_acc = 100.00000,train_loss = 0.021787
+INFO:root:test1, test_acc = 86.8924,test_loss = 0.6692
+max_val_acc 87.08333333333333
+0.04895287900583217
+0.004895287900583217
+
+Epoch: 152
+INFO:root:Iteration 152, train_acc = 100.00000,train_loss = 0.021598
+INFO:root:test1, test_acc = 86.6840,test_loss = 0.6676
+max_val_acc 87.08333333333333
+0.04842946204609359
+0.004842946204609359
+
+Epoch: 153
+INFO:root:Iteration 153, train_acc = 100.00000,train_loss = 0.021963
+INFO:root:test1, test_acc = 86.8924,test_loss = 0.6704
+max_val_acc 87.08333333333333
+0.04790621731354002
+0.004790621731354002
+
+Epoch: 154
+INFO:root:Iteration 154, train_acc = 100.00000,train_loss = 0.022038
+INFO:root:test1, test_acc = 86.8576,test_loss = 0.6672
+max_val_acc 87.08333333333333
+0.04738320218785281
+0.0047383202187852805
+
+Epoch: 155
+INFO:root:Iteration 155, train_acc = 100.00000,train_loss = 0.020990
+INFO:root:test1, test_acc = 86.9271,test_loss = 0.6724
+max_val_acc 87.08333333333333
+0.04686047402353435
+0.004686047402353435
+
+Epoch: 156
+INFO:root:Iteration 156, train_acc = 100.00000,train_loss = 0.021450
+INFO:root:test1, test_acc = 87.0660,test_loss = 0.6656
+max_val_acc 87.08333333333333
+0.04633809014361843
+0.0046338090143618425
+
+Epoch: 157
+INFO:root:Iteration 157, train_acc = 100.00000,train_loss = 0.021254
+INFO:root:test1, test_acc = 86.9618,test_loss = 0.6678
+max_val_acc 87.08333333333333
+0.045816107833384224
+0.004581610783338423
+
+Epoch: 158
+INFO:root:Iteration 158, train_acc = 100.00000,train_loss = 0.021937
+INFO:root:test1, test_acc = 86.9444,test_loss = 0.6699
+max_val_acc 87.08333333333333
+0.04529458433407429
+0.004529458433407429
+
+Epoch: 159
+INFO:root:Iteration 159, train_acc = 100.00000,train_loss = 0.021944
+INFO:root:test1, test_acc = 86.8750,test_loss = 0.6736
+max_val_acc 87.08333333333333
+0.04477357683661734
+0.004477357683661734
+
+Epoch: 160
+INFO:root:Iteration 160, train_acc = 100.00000,train_loss = 0.021524
+INFO:root:test1, test_acc = 86.8403,test_loss = 0.6706
+max_val_acc 87.08333333333333
+0.04425314247535668
+0.004425314247535668
+
+Epoch: 161
+INFO:root:Iteration 161, train_acc = 100.00000,train_loss = 0.022003
+INFO:root:test1, test_acc = 86.7361,test_loss = 0.6707
+max_val_acc 87.08333333333333
+0.0437333383217848
+0.00437333383217848
+
+Epoch: 162
+INFO:root:Iteration 162, train_acc = 100.00000,train_loss = 0.021796
+INFO:root:test1, test_acc = 86.8750,test_loss = 0.6731
+max_val_acc 87.08333333333333
+0.04321422137828479
+0.004321422137828479
+
+Epoch: 163
+INFO:root:Iteration 163, train_acc = 100.00000,train_loss = 0.021640
+INFO:root:test1, test_acc = 86.9444,test_loss = 0.6761
+max_val_acc 87.08333333333333
+0.04269584857187944
+0.004269584857187944
+
+Epoch: 164
+INFO:root:Iteration 164, train_acc = 100.00000,train_loss = 0.021549
+INFO:root:test1, test_acc = 87.0139,test_loss = 0.6676
+max_val_acc 87.08333333333333
+0.04217827674798847
+0.004217827674798847
+
+Epoch: 165
+INFO:root:Iteration 165, train_acc = 100.00000,train_loss = 0.021558
+INFO:root:test1, test_acc = 86.6146,test_loss = 0.6772
+max_val_acc 87.08333333333333
+0.04166156266419488
+0.004166156266419488
+
+Epoch: 166
+INFO:root:Iteration 166, train_acc = 100.00000,train_loss = 0.021751
+INFO:root:test1, test_acc = 86.8924,test_loss = 0.6766
+max_val_acc 87.08333333333333
+0.04114576298402084
+0.004114576298402084
+
+Epoch: 167
+INFO:root:Iteration 167, train_acc = 100.00000,train_loss = 0.021213
+INFO:root:test1, test_acc = 86.9271,test_loss = 0.6744
+max_val_acc 87.08333333333333
+0.04063093427071377
+0.004063093427071377
+
+Epoch: 168
+INFO:root:Iteration 168, train_acc = 100.00000,train_loss = 0.021625
+INFO:root:test1, test_acc = 86.8403,test_loss = 0.6800
+max_val_acc 87.08333333333333
+0.04011713298104369
+0.004011713298104369
+
+Epoch: 169
+INFO:root:Iteration 169, train_acc = 100.00000,train_loss = 0.021843
+INFO:root:test1, test_acc = 86.8056,test_loss = 0.6753
+max_val_acc 87.08333333333333
+0.03960441545911203
+0.003960441545911203
+
+Epoch: 170
+INFO:root:Iteration 170, train_acc = 100.00000,train_loss = 0.021703
+INFO:root:test1, test_acc = 86.9965,test_loss = 0.6741
+max_val_acc 87.08333333333333
+0.039092837930172875
+0.003909283793017288
+
+Epoch: 171
+INFO:root:Iteration 171, train_acc = 100.00000,train_loss = 0.021802
+INFO:root:test1, test_acc = 87.1181,test_loss = 0.6718
+max_val_acc 87.11805555555556
+0.038582456494467225
+0.0038582456494467227
+
+Epoch: 172
+INFO:root:Iteration 172, train_acc = 100.00000,train_loss = 0.021941
+INFO:root:test1, test_acc = 86.8229,test_loss = 0.6790
+max_val_acc 87.11805555555556
+0.03807332712107097
+0.003807332712107097
+
+Epoch: 173
+INFO:root:Iteration 173, train_acc = 100.00000,train_loss = 0.021258
+INFO:root:test1, test_acc = 86.8229,test_loss = 0.6781
+max_val_acc 87.11805555555556
+0.03756550564175727
+0.003756550564175727
+
+Epoch: 174
+INFO:root:Iteration 174, train_acc = 100.00000,train_loss = 0.021231
+INFO:root:test1, test_acc = 86.9097,test_loss = 0.6764
+max_val_acc 87.11805555555556
+0.03705904774487397
+0.0037059047744873973
+
+Epoch: 175
+INFO:root:Iteration 175, train_acc = 100.00000,train_loss = 0.021695
+INFO:root:test1, test_acc = 86.7014,test_loss = 0.6782
+max_val_acc 87.11805555555556
+0.03655400896923673
+0.003655400896923673
+
+Epoch: 176
+INFO:root:Iteration 176, train_acc = 100.00000,train_loss = 0.021437
+INFO:root:test1, test_acc = 86.8576,test_loss = 0.6726
+max_val_acc 87.11805555555556
+0.03605044469803853
+0.003605044469803853
+
+Epoch: 177
+INFO:root:Iteration 177, train_acc = 100.00000,train_loss = 0.021271
+INFO:root:test1, test_acc = 86.9792,test_loss = 0.6812
+max_val_acc 87.11805555555556
+0.03554841015277641
+0.003554841015277641
+
+Epoch: 178
+INFO:root:Iteration 178, train_acc = 100.00000,train_loss = 0.021683
+INFO:root:test1, test_acc = 86.7882,test_loss = 0.6771
+max_val_acc 87.11805555555556
+0.035047960387195674
+0.0035047960387195676
+
+Epoch: 179
+INFO:root:Iteration 179, train_acc = 100.00000,train_loss = 0.021447
+INFO:root:test1, test_acc = 86.5799,test_loss = 0.6806
+max_val_acc 87.11805555555556
+0.03454915028125263
+0.003454915028125263
+
+Epoch: 180
+INFO:root:Iteration 180, train_acc = 100.00000,train_loss = 0.021153
+INFO:root:test1, test_acc = 86.5278,test_loss = 0.6853
+max_val_acc 87.11805555555556
+0.034052034535096504
+0.0034052034535096503
+
+Epoch: 181
+INFO:root:Iteration 181, train_acc = 100.00000,train_loss = 0.021306
+INFO:root:test1, test_acc = 86.7535,test_loss = 0.6798
+max_val_acc 87.11805555555556
+0.03355666766307084
+0.003355666766307084
+
+Epoch: 182
+INFO:root:Iteration 182, train_acc = 100.00000,train_loss = 0.021528
+INFO:root:test1, test_acc = 86.9444,test_loss = 0.6762
+max_val_acc 87.11805555555556
+0.03306310398773543
+0.003306310398773543
+
+Epoch: 183
+INFO:root:Iteration 183, train_acc = 100.00000,train_loss = 0.021848
+INFO:root:test1, test_acc = 86.7882,test_loss = 0.6876
+max_val_acc 87.11805555555556
+0.03257139763390925
+0.003257139763390925
+
+Epoch: 184
+INFO:root:Iteration 184, train_acc = 100.00000,train_loss = 0.021397
+INFO:root:test1, test_acc = 86.7535,test_loss = 0.6775
+max_val_acc 87.11805555555556
+0.032081602522735
+0.0032081602522735
+
+Epoch: 185
+INFO:root:Iteration 185, train_acc = 100.00000,train_loss = 0.021008
+INFO:root:test1, test_acc = 87.0312,test_loss = 0.6784
+max_val_acc 87.11805555555556
+0.03159377236576612
+0.0031593772365766117
+
+Epoch: 186
+INFO:root:Iteration 186, train_acc = 100.00000,train_loss = 0.021425
+INFO:root:test1, test_acc = 86.7535,test_loss = 0.6791
+max_val_acc 87.11805555555556
+0.03110796065907664
+0.003110796065907664
+
+Epoch: 187
+INFO:root:Iteration 187, train_acc = 100.00000,train_loss = 0.021474
+INFO:root:test1, test_acc = 86.7361,test_loss = 0.6810
+max_val_acc 87.11805555555556
+0.030624220677394856
+0.0030624220677394854
+
+Epoch: 188
+INFO:root:Iteration 188, train_acc = 100.00000,train_loss = 0.021574
+INFO:root:test1, test_acc = 86.7708,test_loss = 0.6770
+max_val_acc 87.11805555555556
+0.030142605468260964
+0.0030142605468260965
+
+Epoch: 189
+INFO:root:Iteration 189, train_acc = 100.00000,train_loss = 0.021273
+INFO:root:test1, test_acc = 86.7361,test_loss = 0.6866
+max_val_acc 87.11805555555556
+0.029663167846209988
+0.002966316784620999
+
+Epoch: 190
+INFO:root:Iteration 190, train_acc = 100.00000,train_loss = 0.021191
+INFO:root:test1, test_acc = 86.7014,test_loss = 0.6792
+max_val_acc 87.11805555555556
+0.02918596038697995
+0.0029185960386979948
+
+Epoch: 191
+INFO:root:Iteration 191, train_acc = 100.00000,train_loss = 0.021148
+INFO:root:test1, test_acc = 86.6667,test_loss = 0.6772
+max_val_acc 87.11805555555556
+0.02871103542174637
+0.002871103542174637
+
+Epoch: 192
+INFO:root:Iteration 192, train_acc = 100.00000,train_loss = 0.021401
+INFO:root:test1, test_acc = 86.9097,test_loss = 0.6817
+max_val_acc 87.11805555555556
+0.028238445031383633
+0.0028238445031383633
+
+Epoch: 193
+INFO:root:Iteration 193, train_acc = 100.00000,train_loss = 0.021689
+INFO:root:test1, test_acc = 86.6319,test_loss = 0.6799
+max_val_acc 87.11805555555556
+0.02776824104075364
+0.002776824104075364
+
+Epoch: 194
+INFO:root:Iteration 194, train_acc = 100.00000,train_loss = 0.021336
+INFO:root:test1, test_acc = 87.0139,test_loss = 0.6793
+max_val_acc 87.11805555555556
+0.027300475013022664
+0.0027300475013022664
+
+Epoch: 195
+INFO:root:Iteration 195, train_acc = 100.00000,train_loss = 0.021350
+INFO:root:test1, test_acc = 86.9097,test_loss = 0.6854
+max_val_acc 87.11805555555556
+0.026835198244006927
+0.0026835198244006928
+
+Epoch: 196
+INFO:root:Iteration 196, train_acc = 100.00000,train_loss = 0.021623
+INFO:root:test1, test_acc = 86.8229,test_loss = 0.6811
+max_val_acc 87.11805555555556
+0.026372461756547307
+0.0026372461756547306
+
+Epoch: 197
+INFO:root:Iteration 197, train_acc = 100.00000,train_loss = 0.021335
+INFO:root:test1, test_acc = 87.0312,test_loss = 0.6797
+max_val_acc 87.11805555555556
+0.02591231629491423
+0.002591231629491423
+
+Epoch: 198
+INFO:root:Iteration 198, train_acc = 100.00000,train_loss = 0.021054
+INFO:root:test1, test_acc = 86.9618,test_loss = 0.6790
+max_val_acc 87.11805555555556
+0.02545481231924296
+0.002545481231924296
+
+Epoch: 199
+INFO:root:Iteration 199, train_acc = 100.00000,train_loss = 0.021323
+INFO:root:test1, test_acc = 87.0833,test_loss = 0.6821
+max_val_acc 87.11805555555556
+0.02499999999999999
+0.002499999999999999
+
+Epoch: 200
+INFO:root:Iteration 200, train_acc = 100.00000,train_loss = 0.020980
+INFO:root:test1, test_acc = 86.7882,test_loss = 0.6803
+max_val_acc 87.11805555555556
+0.024547929212481435
+0.0024547929212481437
+
+Epoch: 201
+INFO:root:Iteration 201, train_acc = 100.00000,train_loss = 0.021338
+INFO:root:test1, test_acc = 86.8576,test_loss = 0.6853
+max_val_acc 87.11805555555556
+0.024098649531343497
+0.0024098649531343495
+
+Epoch: 202
+INFO:root:Iteration 202, train_acc = 100.00000,train_loss = 0.021388
+INFO:root:test1, test_acc = 86.8403,test_loss = 0.6873
+max_val_acc 87.11805555555556
+0.023652210225166122
+0.002365221022516612
+
+Epoch: 203
+INFO:root:Iteration 203, train_acc = 100.00000,train_loss = 0.021258
+INFO:root:test1, test_acc = 86.8750,test_loss = 0.6892
+max_val_acc 87.11805555555556
+0.02320866025105018
+0.002320866025105018
+
+Epoch: 204
+INFO:root:Iteration 204, train_acc = 100.00000,train_loss = 0.021470
+INFO:root:test1, test_acc = 86.9618,test_loss = 0.6888
+max_val_acc 87.11805555555556
+0.022768048249248662
+0.002276804824924866
+
+Epoch: 205
+INFO:root:Iteration 205, train_acc = 100.00000,train_loss = 0.021523
+INFO:root:test1, test_acc = 86.8750,test_loss = 0.6913
+max_val_acc 87.11805555555556
+0.0223304225378328
+0.00223304225378328
+
+Epoch: 206
+INFO:root:Iteration 206, train_acc = 100.00000,train_loss = 0.021254
+INFO:root:test1, test_acc = 86.6493,test_loss = 0.6901
+max_val_acc 87.11805555555556
+0.021895831107393484
+0.0021895831107393484
+
+Epoch: 207
+INFO:root:Iteration 207, train_acc = 100.00000,train_loss = 0.021422
+INFO:root:test1, test_acc = 86.8229,test_loss = 0.6807
+max_val_acc 87.11805555555556
+0.021464321615778423
+0.0021464321615778425
+
+Epoch: 208
+INFO:root:Iteration 208, train_acc = 100.00000,train_loss = 0.021185
+INFO:root:test1, test_acc = 86.9271,test_loss = 0.6838
+max_val_acc 87.11805555555556
+0.021035941382866054
+0.0021035941382866056
+
+Epoch: 209
+INFO:root:Iteration 209, train_acc = 100.00000,train_loss = 0.021029
+INFO:root:test1, test_acc = 86.5278,test_loss = 0.6879
+max_val_acc 87.11805555555556
+0.02061073738537635
+0.0020610737385376348
+
+Epoch: 210
+INFO:root:Iteration 210, train_acc = 100.00000,train_loss = 0.021195
+INFO:root:test1, test_acc = 86.7361,test_loss = 0.6898
+max_val_acc 87.11805555555556
+0.020188756251719203
+0.00201887562517192
+
+Epoch: 211
+INFO:root:Iteration 211, train_acc = 100.00000,train_loss = 0.021314
+INFO:root:test1, test_acc = 86.9097,test_loss = 0.6809
+max_val_acc 87.11805555555556
+0.01977004425688126
+0.001977004425688126
+
+Epoch: 212
+INFO:root:Iteration 212, train_acc = 100.00000,train_loss = 0.021388
+INFO:root:test1, test_acc = 86.6146,test_loss = 0.6862
+max_val_acc 87.11805555555556
+0.01935464731735119
+0.001935464731735119
+
+Epoch: 213
+INFO:root:Iteration 213, train_acc = 100.00000,train_loss = 0.021382
+INFO:root:test1, test_acc = 86.8924,test_loss = 0.6825
+max_val_acc 87.11805555555556
+0.018942610986084487
+0.0018942610986084486
+
+Epoch: 214
+INFO:root:Iteration 214, train_acc = 100.00000,train_loss = 0.021302
+INFO:root:test1, test_acc = 86.8403,test_loss = 0.6914
+max_val_acc 87.11805555555556
+0.018533980447508137
+0.0018533980447508138
+
+Epoch: 215
+INFO:root:Iteration 215, train_acc = 100.00000,train_loss = 0.021215
+INFO:root:test1, test_acc = 86.8576,test_loss = 0.6848
+max_val_acc 87.11805555555556
+0.018128800512565515
+0.0018128800512565515
+
+Epoch: 216
+INFO:root:Iteration 216, train_acc = 100.00000,train_loss = 0.021438
+INFO:root:test1, test_acc = 87.1181,test_loss = 0.6886
+max_val_acc 87.11805555555556
+0.01772711561380248
+0.001772711561380248
+
+Epoch: 217
+INFO:root:Iteration 217, train_acc = 100.00000,train_loss = 0.021002
+INFO:root:test1, test_acc = 86.6493,test_loss = 0.6864
+max_val_acc 87.11805555555556
+0.017328969800494743
+0.0017328969800494743
+
+Epoch: 218
+INFO:root:Iteration 218, train_acc = 100.00000,train_loss = 0.020967
+INFO:root:test1, test_acc = 86.8229,test_loss = 0.6921
+max_val_acc 87.11805555555556
+0.0169344067338174
+0.0016934406733817397
+
+Epoch: 219
+INFO:root:Iteration 219, train_acc = 100.00000,train_loss = 0.021174
+INFO:root:test1, test_acc = 86.4757,test_loss = 0.6901
+max_val_acc 87.11805555555556
+0.01654346968205709
+0.0016543469682057089
+
+Epoch: 220
+INFO:root:Iteration 220, train_acc = 100.00000,train_loss = 0.021234
+INFO:root:test1, test_acc = 86.7882,test_loss = 0.6890
+max_val_acc 87.11805555555556
+0.01615620151586697
+0.0016156201515866969
+
+Epoch: 221
+INFO:root:Iteration 221, train_acc = 100.00000,train_loss = 0.021171
+INFO:root:test1, test_acc = 86.8576,test_loss = 0.6829
+max_val_acc 87.11805555555556
+0.015772644703565566
+0.0015772644703565565
+
+Epoch: 222
+INFO:root:Iteration 222, train_acc = 100.00000,train_loss = 0.021208
+INFO:root:test1, test_acc = 86.8750,test_loss = 0.6884
+max_val_acc 87.11805555555556
+0.015392841306479665
+0.0015392841306479665
+
+Epoch: 223
+INFO:root:Iteration 223, train_acc = 100.00000,train_loss = 0.021120
+INFO:root:test1, test_acc = 86.8229,test_loss = 0.6923
+max_val_acc 87.11805555555556
+0.015016832974331724
+0.0015016832974331725
+
+Epoch: 224
+INFO:root:Iteration 224, train_acc = 100.00000,train_loss = 0.021077
+INFO:root:test1, test_acc = 86.9618,test_loss = 0.6875
+max_val_acc 87.11805555555556
+0.014644660940672627
+0.0014644660940672626
+
+Epoch: 225
+INFO:root:Iteration 225, train_acc = 100.00000,train_loss = 0.020925
+INFO:root:test1, test_acc = 86.8750,test_loss = 0.6869
+max_val_acc 87.11805555555556
+0.014276366018359844
+0.0014276366018359844
+
+Epoch: 226
+INFO:root:Iteration 226, train_acc = 100.00000,train_loss = 0.021343
+INFO:root:test1, test_acc = 86.9618,test_loss = 0.6866
+max_val_acc 87.11805555555556
+0.013911988595081894
+0.0013911988595081894
+
+Epoch: 227
+INFO:root:Iteration 227, train_acc = 100.00000,train_loss = 0.021055
+INFO:root:test1, test_acc = 86.9444,test_loss = 0.6884
+max_val_acc 87.11805555555556
+0.013551568628929435
+0.0013551568628929435
+
+Epoch: 228
+INFO:root:Iteration 228, train_acc = 100.00000,train_loss = 0.021155
+INFO:root:test1, test_acc = 86.9792,test_loss = 0.6858
+max_val_acc 87.11805555555556
+0.013195145644013301
+0.00131951456440133
+
+Epoch: 229
+INFO:root:Iteration 229, train_acc = 100.00000,train_loss = 0.021285
+INFO:root:test1, test_acc = 87.0660,test_loss = 0.6878
+max_val_acc 87.11805555555556
+0.012842758726130284
+0.0012842758726130284
+
+Epoch: 230
+INFO:root:Iteration 230, train_acc = 100.00000,train_loss = 0.021197
+INFO:root:test1, test_acc = 86.9271,test_loss = 0.6880
+max_val_acc 87.11805555555556
+0.012494446518477021
+0.001249444651847702
+
+Epoch: 231
+INFO:root:Iteration 231, train_acc = 100.00000,train_loss = 0.021104
+INFO:root:test1, test_acc = 86.8924,test_loss = 0.6846
+max_val_acc 87.11805555555556
+0.012150247217412187
+0.0012150247217412188
+
+Epoch: 232
+INFO:root:Iteration 232, train_acc = 100.00000,train_loss = 0.021231
+INFO:root:test1, test_acc = 86.8750,test_loss = 0.6856
+max_val_acc 87.11805555555556
+0.011810198568267889
+0.001181019856826789
+
+Epoch: 233
+INFO:root:Iteration 233, train_acc = 100.00000,train_loss = 0.021176
+INFO:root:test1, test_acc = 86.8750,test_loss = 0.6870
+max_val_acc 87.11805555555556
+0.011474337861210543
+0.0011474337861210543
+
+Epoch: 234
+INFO:root:Iteration 234, train_acc = 100.00000,train_loss = 0.021058
+INFO:root:test1, test_acc = 86.6146,test_loss = 0.6908
+max_val_acc 87.11805555555556
+0.011142701927151456
+0.0011142701927151456
+
+Epoch: 235
+INFO:root:Iteration 235, train_acc = 100.00000,train_loss = 0.021107
+INFO:root:test1, test_acc = 86.7361,test_loss = 0.6900
+max_val_acc 87.11805555555556
+0.010815327133708015
+0.0010815327133708015
+
+Epoch: 236
+INFO:root:Iteration 236, train_acc = 100.00000,train_loss = 0.021427
+INFO:root:test1, test_acc = 86.7014,test_loss = 0.6912
+max_val_acc 87.11805555555556
+0.010492249381215492
+0.0010492249381215493
+
+Epoch: 237
+INFO:root:Iteration 237, train_acc = 100.00000,train_loss = 0.021225
+INFO:root:test1, test_acc = 86.6667,test_loss = 0.6891
+max_val_acc 87.11805555555556
+0.010173504098790188
+0.0010173504098790187
+
+Epoch: 238
+INFO:root:Iteration 238, train_acc = 100.00000,train_loss = 0.020812
+INFO:root:test1, test_acc = 86.8576,test_loss = 0.6908
+max_val_acc 87.11805555555556
+0.009859126240444284
+0.0009859126240444284
+
+Epoch: 239
+INFO:root:Iteration 239, train_acc = 100.00000,train_loss = 0.020883
+INFO:root:test1, test_acc = 86.9792,test_loss = 0.6914
+max_val_acc 87.11805555555556
+0.009549150281252633
+0.0009549150281252634
+
+Epoch: 240
+INFO:root:Iteration 240, train_acc = 100.00000,train_loss = 0.021024
+INFO:root:test1, test_acc = 87.0312,test_loss = 0.6898
+max_val_acc 87.11805555555556
+0.009243610213572284
+0.0009243610213572284
+
+Epoch: 241
+INFO:root:Iteration 241, train_acc = 100.00000,train_loss = 0.021218
+INFO:root:test1, test_acc = 86.8750,test_loss = 0.6863
+max_val_acc 87.11805555555556
+0.008942539543314799
+0.0008942539543314799
+
+Epoch: 242
+INFO:root:Iteration 242, train_acc = 100.00000,train_loss = 0.020938
+INFO:root:test1, test_acc = 86.9271,test_loss = 0.6947
+max_val_acc 87.11805555555556
+0.008645971286271903
+0.0008645971286271902
+
+Epoch: 243
+INFO:root:Iteration 243, train_acc = 100.00000,train_loss = 0.021007
+INFO:root:test1, test_acc = 87.0139,test_loss = 0.6840
+max_val_acc 87.11805555555556
+0.00835393796449503
+0.000835393796449503
+
+Epoch: 244
+INFO:root:Iteration 244, train_acc = 100.00000,train_loss = 0.021071
+INFO:root:test1, test_acc = 87.2569,test_loss = 0.6853
+max_val_acc 87.25694444444444
+0.008066471602728803
+0.0008066471602728803
+
+Epoch: 245
+INFO:root:Iteration 245, train_acc = 100.00000,train_loss = 0.021279
+INFO:root:test1, test_acc = 87.1181,test_loss = 0.6895
+max_val_acc 87.25694444444444
+0.007783603724899247
+0.0007783603724899246
+
+Epoch: 246
+INFO:root:Iteration 246, train_acc = 100.00000,train_loss = 0.021038
+INFO:root:test1, test_acc = 87.0833,test_loss = 0.6855
+max_val_acc 87.25694444444444
+0.007505365350656813
+0.0007505365350656812
+
+Epoch: 247
+INFO:root:Iteration 247, train_acc = 100.00000,train_loss = 0.021198
+INFO:root:test1, test_acc = 86.9618,test_loss = 0.6899
+max_val_acc 87.25694444444444
+0.00723178699197467
+0.0007231786991974671
+
+Epoch: 248
+INFO:root:Iteration 248, train_acc = 100.00000,train_loss = 0.020981
+INFO:root:test1, test_acc = 86.9618,test_loss = 0.6921
+max_val_acc 87.25694444444444
+0.006962898649802824
+0.0006962898649802824
+
+Epoch: 249
+INFO:root:Iteration 249, train_acc = 100.00000,train_loss = 0.021233
+INFO:root:test1, test_acc = 86.8924,test_loss = 0.6920
+max_val_acc 87.25694444444444
+0.006698729810778076
+0.0006698729810778076
+
+Epoch: 250
+INFO:root:Iteration 250, train_acc = 100.00000,train_loss = 0.020985
+INFO:root:test1, test_acc = 86.8403,test_loss = 0.6934
+max_val_acc 87.25694444444444
+0.006439309443990521
+0.0006439309443990521
+
+Epoch: 251
+INFO:root:Iteration 251, train_acc = 100.00000,train_loss = 0.020953
+INFO:root:test1, test_acc = 86.8750,test_loss = 0.6903
+max_val_acc 87.25694444444444
+0.006184665997806821
+0.0006184665997806822
+
+Epoch: 252
+INFO:root:Iteration 252, train_acc = 100.00000,train_loss = 0.020734
+INFO:root:test1, test_acc = 86.7014,test_loss = 0.6941
+max_val_acc 87.25694444444444
+0.005934827396750392
+0.0005934827396750392
+
+Epoch: 253
+INFO:root:Iteration 253, train_acc = 100.00000,train_loss = 0.021049
+INFO:root:test1, test_acc = 86.9618,test_loss = 0.6949
+max_val_acc 87.25694444444444
+0.005689821038439263
+0.0005689821038439263
+
+Epoch: 254
+INFO:root:Iteration 254, train_acc = 100.00000,train_loss = 0.021104
+INFO:root:test1, test_acc = 87.1181,test_loss = 0.6913
+max_val_acc 87.25694444444444
+0.005449673790581611
+0.0005449673790581611
+
+Epoch: 255
+INFO:root:Iteration 255, train_acc = 100.00000,train_loss = 0.020813
+INFO:root:test1, test_acc = 87.0660,test_loss = 0.6901
+max_val_acc 87.25694444444444
+0.005214411988029366
+0.0005214411988029367
+
+Epoch: 256
+INFO:root:Iteration 256, train_acc = 100.00000,train_loss = 0.021097
+INFO:root:test1, test_acc = 86.8576,test_loss = 0.6918
+max_val_acc 87.25694444444444
+0.004984061429890324
+0.0004984061429890325
+
+Epoch: 257
+INFO:root:Iteration 257, train_acc = 100.00000,train_loss = 0.021112
+INFO:root:test1, test_acc = 87.0486,test_loss = 0.6917
+max_val_acc 87.25694444444444
+0.004758647376699033
+0.00047586473766990324
+
+Epoch: 258
+INFO:root:Iteration 258, train_acc = 100.00000,train_loss = 0.021270
+INFO:root:test1, test_acc = 87.1354,test_loss = 0.6870
+max_val_acc 87.25694444444444
+0.004538194547646574
+0.00045381945476465735
+
+Epoch: 259
+INFO:root:Iteration 259, train_acc = 100.00000,train_loss = 0.020717
+INFO:root:test1, test_acc = 87.0312,test_loss = 0.6933
+max_val_acc 87.25694444444444
+0.004322727117869962
+0.00043227271178699624
+
+Epoch: 260
+INFO:root:Iteration 260, train_acc = 100.00000,train_loss = 0.021039
+INFO:root:test1, test_acc = 86.9618,test_loss = 0.6916
+max_val_acc 87.25694444444444
+0.004112268715800955
+0.00041122687158009547
+
+Epoch: 261
+INFO:root:Iteration 261, train_acc = 100.00000,train_loss = 0.020723
+INFO:root:test1, test_acc = 86.8750,test_loss = 0.6882
+max_val_acc 87.25694444444444
+0.003906842420574969
+0.00039068424205749685
+
+Epoch: 262
+INFO:root:Iteration 262, train_acc = 100.00000,train_loss = 0.020851
+INFO:root:test1, test_acc = 86.7882,test_loss = 0.6864
+max_val_acc 87.25694444444444
+0.0037064707595002634
+0.0003706470759500263
+
+Epoch: 263
+INFO:root:Iteration 263, train_acc = 100.00000,train_loss = 0.021281
+INFO:root:test1, test_acc = 86.8924,test_loss = 0.6902
+max_val_acc 87.25694444444444
+0.0035111757055874327
+0.0003511175705587433
+
+Epoch: 264
+INFO:root:Iteration 264, train_acc = 100.00000,train_loss = 0.020723
+INFO:root:test1, test_acc = 87.0833,test_loss = 0.6922
+max_val_acc 87.25694444444444
+0.003320978675139913
+0.0003320978675139913
+
+Epoch: 265
+INFO:root:Iteration 265, train_acc = 100.00000,train_loss = 0.020965
+INFO:root:test1, test_acc = 87.0312,test_loss = 0.6894
+max_val_acc 87.25694444444444
+0.0031359005254054276
+0.00031359005254054276
+
+Epoch: 266
+INFO:root:Iteration 266, train_acc = 100.00000,train_loss = 0.021018
+INFO:root:test1, test_acc = 86.8229,test_loss = 0.6928
+max_val_acc 87.25694444444444
+0.0029559615522887273
+0.00029559615522887275
+
+Epoch: 267
+INFO:root:Iteration 267, train_acc = 100.00000,train_loss = 0.021075
+INFO:root:test1, test_acc = 86.8750,test_loss = 0.6915
+max_val_acc 87.25694444444444
+0.00278118148812595
+0.000278118148812595
+
+Epoch: 268
+INFO:root:Iteration 268, train_acc = 100.00000,train_loss = 0.021027
+INFO:root:test1, test_acc = 86.9792,test_loss = 0.6910
+max_val_acc 87.25694444444444
+0.0026115794995207223
+0.0002611579499520722
+
+Epoch: 269
+INFO:root:Iteration 269, train_acc = 100.00000,train_loss = 0.021012
+INFO:root:test1, test_acc = 87.0660,test_loss = 0.6898
+max_val_acc 87.25694444444444
+0.0024471741852423235
+0.00024471741852423234
+
+Epoch: 270
+INFO:root:Iteration 270, train_acc = 100.00000,train_loss = 0.021103
+INFO:root:test1, test_acc = 87.1701,test_loss = 0.6871
+max_val_acc 87.25694444444444
+0.0022879835741861586
+0.00022879835741861586
+
+Epoch: 271
+INFO:root:Iteration 271, train_acc = 100.00000,train_loss = 0.020928
+INFO:root:test1, test_acc = 87.0660,test_loss = 0.6940
+max_val_acc 87.25694444444444
+0.002134025123396638
+0.0002134025123396638
+
+Epoch: 272
+INFO:root:Iteration 272, train_acc = 100.00000,train_loss = 0.021179
+INFO:root:test1, test_acc = 86.9097,test_loss = 0.6928
+max_val_acc 87.25694444444444
+0.0019853157161528467
+0.00019853157161528467
+
+Epoch: 273
+INFO:root:Iteration 273, train_acc = 100.00000,train_loss = 0.020892
+INFO:root:test1, test_acc = 86.8056,test_loss = 0.6927
+max_val_acc 87.25694444444444
+0.0018418716601170948
+0.00018418716601170947
+
+Epoch: 274
+INFO:root:Iteration 274, train_acc = 100.00000,train_loss = 0.021198
+INFO:root:test1, test_acc = 87.0139,test_loss = 0.6908
+max_val_acc 87.25694444444444
+0.0017037086855465845
+0.00017037086855465846
+
+Epoch: 275
+INFO:root:Iteration 275, train_acc = 100.00000,train_loss = 0.020911
+INFO:root:test1, test_acc = 87.2049,test_loss = 0.6896
+max_val_acc 87.25694444444444
+0.0015708419435684464
+0.00015708419435684463
+
+Epoch: 276
+INFO:root:Iteration 276, train_acc = 100.00000,train_loss = 0.020913
+INFO:root:test1, test_acc = 87.1007,test_loss = 0.6895
+max_val_acc 87.25694444444444
+0.0014432860045182018
+0.00014432860045182017
+
+Epoch: 277
+INFO:root:Iteration 277, train_acc = 100.00000,train_loss = 0.021029
+INFO:root:test1, test_acc = 86.8750,test_loss = 0.6900
+max_val_acc 87.25694444444444
+0.0013210548563419855
+0.00013210548563419855
+
+Epoch: 278
+INFO:root:Iteration 278, train_acc = 100.00000,train_loss = 0.020928
+INFO:root:test1, test_acc = 86.8576,test_loss = 0.6885
+max_val_acc 87.25694444444444
+0.0012041619030626338
+0.00012041619030626338
+
+Epoch: 279
+INFO:root:Iteration 279, train_acc = 100.00000,train_loss = 0.020770
+INFO:root:test1, test_acc = 87.0312,test_loss = 0.6906
+max_val_acc 87.25694444444444
+0.0010926199633097212
+0.00010926199633097212
+
+Epoch: 280
+INFO:root:Iteration 280, train_acc = 100.00000,train_loss = 0.020936
+INFO:root:test1, test_acc = 87.1007,test_loss = 0.6909
+max_val_acc 87.25694444444444
+0.0009864412689139124
+9.864412689139125e-05
+
+Epoch: 281
+INFO:root:Iteration 281, train_acc = 100.00000,train_loss = 0.021038
+INFO:root:test1, test_acc = 87.0660,test_loss = 0.6860
+max_val_acc 87.25694444444444
+0.0008856374635655695
+8.856374635655695e-05
+
+Epoch: 282
+INFO:root:Iteration 282, train_acc = 100.00000,train_loss = 0.020894
+INFO:root:test1, test_acc = 86.8403,test_loss = 0.6952
+max_val_acc 87.25694444444444
+0.000790219601537906
+7.90219601537906e-05
+
+Epoch: 283
+INFO:root:Iteration 283, train_acc = 100.00000,train_loss = 0.021114
+INFO:root:test1, test_acc = 86.9097,test_loss = 0.6923
+max_val_acc 87.25694444444444
+0.0007001981464747509
+7.00198146474751e-05
+
+Epoch: 284
+INFO:root:Iteration 284, train_acc = 100.00000,train_loss = 0.021012
+INFO:root:test1, test_acc = 86.7882,test_loss = 0.6956
+max_val_acc 87.25694444444444
+0.0006155829702431171
+6.155829702431172e-05
+
+Epoch: 285
+INFO:root:Iteration 285, train_acc = 100.00000,train_loss = 0.020939
+INFO:root:test1, test_acc = 87.1007,test_loss = 0.6923
+max_val_acc 87.25694444444444
+0.0005363833518505834
+5.3638335185058335e-05
+
+Epoch: 286
+INFO:root:Iteration 286, train_acc = 100.00000,train_loss = 0.020979
+INFO:root:test1, test_acc = 86.9792,test_loss = 0.6935
+max_val_acc 87.25694444444444
+0.0004626079764278202
+4.626079764278202e-05
+
+Epoch: 287
+INFO:root:Iteration 287, train_acc = 100.00000,train_loss = 0.021133
+INFO:root:test1, test_acc = 87.0833,test_loss = 0.6904
+max_val_acc 87.25694444444444
+0.0003942649342761118
+3.942649342761118e-05
+
+Epoch: 288
+INFO:root:Iteration 288, train_acc = 100.00000,train_loss = 0.021243
+INFO:root:test1, test_acc = 86.9097,test_loss = 0.6922
+max_val_acc 87.25694444444444
+0.00033136171998017776
+3.313617199801777e-05
+
+Epoch: 289
+INFO:root:Iteration 289, train_acc = 100.00000,train_loss = 0.021199
+INFO:root:test1, test_acc = 86.8229,test_loss = 0.6865
+max_val_acc 87.25694444444444
+0.0002739052315863355
+2.739052315863355e-05
+
+Epoch: 290
+INFO:root:Iteration 290, train_acc = 100.00000,train_loss = 0.021214
+INFO:root:test1, test_acc = 87.0312,test_loss = 0.6883
+max_val_acc 87.25694444444444
+0.0002219017698460002
+2.219017698460002e-05
+
+Epoch: 291
+INFO:root:Iteration 291, train_acc = 100.00000,train_loss = 0.020962
+INFO:root:test1, test_acc = 86.8924,test_loss = 0.6877
+max_val_acc 87.25694444444444
+0.0001753570375247815
+1.7535703752478148e-05
+
+Epoch: 292
+INFO:root:Iteration 292, train_acc = 100.00000,train_loss = 0.021032
+INFO:root:test1, test_acc = 87.1181,test_loss = 0.6929
+max_val_acc 87.25694444444444
+0.00013427613877709522
+1.3427613877709522e-05
+
+Epoch: 293
+INFO:root:Iteration 293, train_acc = 100.00000,train_loss = 0.020834
+INFO:root:test1, test_acc = 86.8750,test_loss = 0.6923
+max_val_acc 87.25694444444444
+9.866357858642206e-05
+9.866357858642206e-06
+
+Epoch: 294
+INFO:root:Iteration 294, train_acc = 100.00000,train_loss = 0.021063
+INFO:root:test1, test_acc = 86.9792,test_loss = 0.6926
+max_val_acc 87.25694444444444
+6.852326227130834e-05
+6.852326227130834e-06
+
+Epoch: 295
+INFO:root:Iteration 295, train_acc = 100.00000,train_loss = 0.021006
+INFO:root:test1, test_acc = 87.1007,test_loss = 0.6898
+max_val_acc 87.25694444444444
+4.385849505708084e-05
+4.385849505708084e-06
+
+Epoch: 296
+INFO:root:Iteration 296, train_acc = 100.00000,train_loss = 0.021070
+INFO:root:test1, test_acc = 86.9444,test_loss = 0.6937
+max_val_acc 87.25694444444444
+2.467198171342e-05
+2.467198171342e-06
+
+Epoch: 297
+INFO:root:Iteration 297, train_acc = 100.00000,train_loss = 0.021171
+INFO:root:test1, test_acc = 86.8924,test_loss = 0.6952
+max_val_acc 87.25694444444444
+1.0965826257725021e-05
+1.096582625772502e-06
+
+Epoch: 298
+INFO:root:Iteration 298, train_acc = 100.00000,train_loss = 0.021067
+INFO:root:test1, test_acc = 86.9965,test_loss = 0.6911
+max_val_acc 87.25694444444444
+2.741531724392843e-06
+2.7415317243928433e-07
+
+Epoch: 299
+INFO:root:Iteration 299, train_acc = 100.00000,train_loss = 0.020924
+INFO:root:test1, test_acc = 86.7882,test_loss = 0.6920
+max_val_acc 87.25694444444444
+0.1
+0.01
+
+Epoch: 300
+INFO:root:Iteration 300, train_acc = 100.00000,train_loss = 0.024510
+INFO:root:test1, test_acc = 86.2500,test_loss = 0.7278
+max_val_acc 87.25694444444444
