@@ -21,12 +21,12 @@ Code release for The Devil is in the Channels: Mutual-Channel Loss for Fine-Grai
 - Download datasets
 - Train: `python CUB-200-2011.py`, the alpha is the hyper-parameters of the  `MC-Loss`
 - Description : <br/>
-     1）PyTorch CUB-200-2011 Training with VGG16 (TRAINED FROM SCRATCH).
+     i) PyTorch CUB-200-2011 Training with VGG16 (TRAINED FROM SCRATCH).
 
 - Train: `python MC_ResNet50.py`, the alpha is the hyper-parameters of the  `MC-Loss`
 - Description : <br/>
-    1) PyTorch CUB-200-2011 Training with ResNet50 (USING THE PRE-TRAINED MODEL). <br/>
-    2） MC_ResNet50.out is the output information.
+    i) PyTorch CUB-200-2011 Training with ResNet50 (USING THE PRE-TRAINED MODEL). <br/>
+    ii）MC_ResNet50.out is the output information.
 
 ## Citation
 If you find this paper useful in your research, please consider citing:
