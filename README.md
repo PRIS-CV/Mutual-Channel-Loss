@@ -44,7 +44,7 @@ month={},}
 ```
 
 ## Other versions
-This repo provides the official code of MC-Loss. Other unofficial implements can be found in the following:
+Other unofficial implements can be found in the following:
 - Kurumi233: This repo integrate the MC-Loss into a class.  [code](https://github.com/Kurumi233/Mutual-Channel-Loss "code") 
 
 
