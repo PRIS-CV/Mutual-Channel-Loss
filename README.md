@@ -45,7 +45,8 @@ month={},}
 
 ## Other versions
 This repo provides the official code of MC-Loss. Other versions can be found in the following:
-- Pytorch: [code] (https://github.com/Kurumi233/Mutual-Channel-Loss) The code of mcloss is integrated into a class. 
+- Pytorch: [code](https://github.com/Kurumi233/Mutual-Channel-Loss "code") The code of mcloss is integrated into a class. 
+
 
 ## Contact
 Thanks for your attention!
