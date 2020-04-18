@@ -1,7 +1,7 @@
 '''PyTorch CUB-200-2011 Training with VGG16 (TRAINED FROM SCRATCH).'''
 from __future__ import print_function
 import os
-os.environ["CUDA_VISIBLE_DEVICES"] = "3"
+# import nni
 import time
 import torch
 import logging
@@ -17,48 +17,16 @@ import torch.backends.cudnn as cudnn
 import torchvision
 from my_pooling import my_MaxPool2d,my_AvgPool2d
 import torchvision.transforms as transforms
-logging.basicConfig(level=logging.INFO)
-parser = argparse.ArgumentParser(description='PyTorch CUB-200-2011 Training with VGG16 (TRAINED FROM SCRATCH)')
-parser.add_argument('--lr', default=0.1, type=float, help='learning rate')
-parser.add_argument('--resume', '-r', default=False, type=bool, help='resume from checkpoint')
-args = parser.parse_args()
-logging.info(args)
 
 
-
-store_name = "CUB-200-2011"
-alpha = 1.5
-should_mask = True
-time_str = time.strftime("%m-%d-%H-%M", time.localtime())
-exp_dir = store_name 
+logger = logging.getLogger('MC_VGG_224')
 
 
+os.environ["CUDA_VISIBLE_DEVICES"] = "2,3"
 
-
-
+lr = 0.1
 nb_epoch = 300
-
-
-
-try:
-    os.stat(exp_dir)
-except:
-    os.makedirs(exp_dir)
-logging.info("OPENING " + exp_dir + '/results_train.csv')
-logging.info("OPENING " + exp_dir + '/results_test.csv')
-
-
-results_train_file = open(exp_dir + '/results_train.csv', 'w')
-results_train_file.write('epoch, train_acc,train_loss\n')
-results_train_file.flush()
-
-results_test_file = open(exp_dir + '/results_test.csv', 'w')
-results_test_file.write('epoch, test_acc,test_loss\n')
-results_test_file.flush()
-
-
-
-use_cuda = torch.cuda.is_available()
+criterion = nn.CrossEntropyLoss()
 
 #Data
 print('==> Preparing data..')
@@ -77,15 +45,11 @@ transform_test = transforms.Compose([
 ])
 
 
+trainset    = torchvision.datasets.ImageFolder(root='/home/data/Birds2/train', transform=transform_train)
+trainloader = torch.utils.data.DataLoader(trainset, batch_size=32, shuffle=True, num_workers=16, drop_last = True)
 
-
-trainset    = torchvision.datasets.ImageFolder(root='/data/CUB-200-2011/train', transform=transform_train)
-trainloader = torch.utils.data.DataLoader(trainset, batch_size=32, shuffle=True, num_workers=4)
-
-
-
-testset = torchvision.datasets.ImageFolder(root='/data/CUB-200-2011/test', transform=transform_test)
-testloader = torch.utils.data.DataLoader(testset, batch_size=32, shuffle=True, num_workers=4)
+testset = torchvision.datasets.ImageFolder(root='/home/data/Birds2/test', transform=transform_test)
+testloader = torch.utils.data.DataLoader(testset, batch_size=32, shuffle=True, num_workers=16)
 
 
 print('==> Building model..')
@@ -93,7 +57,7 @@ print('==> Building model..')
 cfg = {
     'VGG11': [64, 'M', 128, 'M', 256, 256, 'M', 512, 512, 'M', 512, 512, 'M'],
     'VGG13': [64, 64, 'M', 128, 128, 'M', 256, 256, 'M', 512, 512, 'M', 512, 512, 'M'],
-    'VGG16': [64, 64, 'M', 128, 128, 'M', 256, 256, 256, 'M', 512, 512, 512, 'M', 512, 512, 600],
+    'VGG16': [64, 64, 'M', 128, 128, 'M', 256, 256, 256, 'M', 512, 512, 600, 'M', 512, 512, 600],
     'VGG19': [64, 64, 'M', 128, 128, 'M', 256, 256, 256, 256, 'M', 512, 512, 512, 512, 'M', 512, 512, 512, 512, 'M'],
 }
 
@@ -126,10 +90,8 @@ class VGG(nn.Module):
 
 
 
-import torchvision.models as models
 
-net = VGG('VGG16')
-net = net.features
+
 
 
 
@@ -151,31 +113,30 @@ def Mask(nb_batch, channels):
 def supervisor(x,targets,height,cnum):
         mask = Mask(x.size(0), cnum)
         branch = x
-        branch = branch.resize(branch.size(0),branch.size(1), branch.size(2) * branch.size(3))
+        branch = branch.reshape(branch.size(0),branch.size(1), branch.size(2) * branch.size(3))
         branch = F.softmax(branch,2)
-        branch = branch.resize(branch.size(0),branch.size(1), x.size(2), x.size(2))
+        branch = branch.reshape(branch.size(0),branch.size(1), x.size(2), x.size(2))
         branch = my_MaxPool2d(kernel_size=(1,cnum), stride=(1,cnum))(branch)  
-        branch = branch.resize(branch.size(0),branch.size(1), branch.size(2) * branch.size(3))
+        branch = branch.reshape(branch.size(0),branch.size(1), branch.size(2) * branch.size(3))
         loss_2 = 1.0 - 1.0*torch.mean(torch.sum(branch,2))/cnum # set margin = 3.0
 
-        if should_mask==True:
-            branch_1 = x * mask 
-        else:
-            branch_1 = x
+        branch_1 = x * mask 
+
         branch_1 = my_MaxPool2d(kernel_size=(1,cnum), stride=(1,cnum))(branch_1)  
         branch_1 = nn.AvgPool2d(kernel_size=(height,height))(branch_1)
         branch_1 = branch_1.view(branch_1.size(0), -1)
 
         loss_1 = criterion(branch_1, targets)
         
-        return loss_1  + 10 * loss_2 
+        return [loss_1, loss_2] 
 
 class model_bn(nn.Module):
-    def __init__(self, model, feature_size,classes_num):
+    def __init__(self, feature_size=512,classes_num=200):
 
         super(model_bn, self).__init__() 
 
-        self.features = net
+        self.features_1 = nn.Sequential(*list(VGG('VGG16').features.children())[:34])
+        self.features_2 = nn.Sequential(*list(VGG('VGG16').features.children())[34:])
 
         self.max = nn.MaxPool2d(kernel_size=2, stride=2)
 
@@ -193,9 +154,12 @@ class model_bn(nn.Module):
     def forward(self, x, targets):
 
 
-        x = self.features(x)
+        x = self.features_1(x)
+
+        x = self.features_2(x)
+
         if self.training:
-            MC_loss = supervisor(x,targets,height=14,cnum=3)
+            MC_loss_1 = supervisor(x,targets,height=14,cnum=3)
 
         x = self.max(x)
         x = x.view(x.size(0), -1)
@@ -203,32 +167,30 @@ class model_bn(nn.Module):
         loss = criterion(x, targets)
 
         if self.training:
-            return x, loss, MC_loss
+            return x, loss, MC_loss_1
         else:
             return x, loss
 
 
-
-net =model_bn(net, 512, 200)
-
+use_cuda = torch.cuda.is_available()
 
 
-# if use_cuda:
-#     net.cuda()
-#     cudnn.benchmark = True
-    
+
+net =model_bn(512, 200)
+
 if use_cuda:
     net.classifier.cuda()
-    net.features.cuda()
+    net.features_1.cuda()
+    net.features_2.cuda()
+
     net.classifier = torch.nn.DataParallel(net.classifier)
-    net.features = torch.nn.DataParallel(net.features)
+    net.features_1 = torch.nn.DataParallel(net.features_1)
+    net.features_2 = torch.nn.DataParallel(net.features_2)
 
     cudnn.benchmark = True
 
-criterion = nn.CrossEntropyLoss()
 
-
-def train(epoch):
+def train(epoch,net, args, trainloader,optimizer):
     print('\nEpoch: %d' % epoch)
     net.train()
     train_loss = 0
@@ -239,25 +201,21 @@ def train(epoch):
 
     for batch_idx, (inputs, targets) in enumerate(trainloader):
         idx = batch_idx
-        if use_cuda:
-            inputs, targets = inputs.cuda(), targets.cuda()
+
+        inputs, targets = inputs.cuda(), targets.cuda()
         optimizer.zero_grad()
         inputs, targets = Variable(inputs), Variable(targets)
-        outputs = net(inputs, targets)
+        out, ce_loss, MC_loss_1 = net(inputs, targets)
 
-
-        loss   = outputs[1]
-        MC_loss = outputs[2]
-
-        loss = loss + alpha * MC_loss 
+        loss = ce_loss + args["alpha_1"] * (MC_loss_1[0] +   args["beta_1"]  * MC_loss_1[1]) 
 
         loss.backward()
         optimizer.step()
-        outputs = outputs[0]
+
 
         train_loss += loss.item()
 
-        _, predicted = torch.max(outputs.data, 1)
+        _, predicted = torch.max(out.data, 1)
         total += targets.size(0)
         correct += predicted.eq(targets.data).cpu().sum().item()
 
@@ -266,11 +224,9 @@ def train(epoch):
     train_acc = 100.*correct/total
     train_loss = train_loss/(idx+1)
     logging.info('Iteration %d, train_acc = %.5f,train_loss = %.6f' % (epoch, train_acc,train_loss))
-    results_train_file.write('%d, %.4f,%.4f\n' % (epoch, train_acc,train_loss))
-    results_train_file.flush()
     return train_acc, train_loss
 
-def test(epoch):
+def test(epoch,net,testloader,optimizer):
 
     net.eval()
     test_loss = 0
@@ -278,32 +234,25 @@ def test(epoch):
     total = 0
     idx = 0
     for batch_idx, (inputs, targets) in enumerate(testloader):
-        idx = batch_idx
-        if use_cuda:
-            inputs, targets = inputs.cuda(), targets.cuda()
-        inputs, targets = Variable(inputs, volatile=True), Variable(targets)
-        outputs = net(inputs,targets)
-        
-        loss = outputs[1]
-        outputs = outputs[0] 
-
-        test_loss += loss.item()
-        _, predicted = torch.max(outputs.data, 1)
-        total += targets.size(0)
-        correct += predicted.eq(targets.data).cpu().sum().item()
+        with torch.no_grad():
+            idx = batch_idx
+            if use_cuda:
+                inputs, targets = inputs.cuda(), targets.cuda()
+            inputs, targets = Variable(inputs), Variable(targets)
+            out, ce_loss = net(inputs,targets)
+            
+            test_loss += ce_loss.item()
+            _, predicted = torch.max(out.data, 1)
+            total += targets.size(0)
+            correct += predicted.eq(targets.data).cpu().sum().item()
 
 
     test_acc = 100.*correct/total
     test_loss = test_loss/(idx+1)
     logging.info('test, test_acc = %.4f,test_loss = %.4f' % (test_acc,test_loss))
-    results_test_file.write('%d, %.4f,%.4f\n' % (epoch, test_acc,test_loss))
-    results_test_file.flush()
 
     return test_acc
  
-
-
-
 def cosine_anneal_schedule(t):
     cos_inner = np.pi * (t % (nb_epoch  ))  # t - 1 is used when t has 1-based indexing.
     cos_inner /= (nb_epoch )
@@ -311,36 +260,55 @@ def cosine_anneal_schedule(t):
     return float( 0.1 / 2 * cos_out)
 
 
-
-
-
 optimizer = optim.SGD([
                         {'params': net.classifier.parameters(), 'lr': 0.1},
-                        {'params': net.features.parameters(),   'lr': 0.1},
+                        {'params': net.features_1.parameters(),   'lr': 0.1},
+                        {'params': net.features_2.parameters(),   'lr': 0.1},
                         
                      ], 
                       momentum=0.9, weight_decay=5e-4)
 
 
+def get_params():
+    # Training settings
+    parser = argparse.ArgumentParser(description='PyTorch MC2_AutoML Example')
+
+    parser.add_argument('--alpha_1', type=float, default=2, metavar='ALPHA',
+                        help='alpha_1 value (default: 1.5)')
+    parser.add_argument('--beta_1', type=float, default=10, metavar='BETA',
+                        help='beta_1 value (default: 10)')
+
+    args, _ = parser.parse_known_args()
+    return args
+
+if __name__ == '__main__':
+    try:
+        # get parameters form tuner
+        tuner_params = nni.get_next_parameter()
+        logger.debug(tuner_params)
+        args = vars(get_params())
+        args.update(tuner_params)
+        print(args)
+        # main(params)
+        max_val_acc = 0
+        for epoch in range(1, nb_epoch+1):
+            if epoch ==150:
+                lr = 0.01
+            if epoch ==225:
+                lr = 0.001
+            optimizer.param_groups[0]['lr'] = lr
+            optimizer.param_groups[1]['lr'] = lr 
+            optimizer.param_groups[2]['lr'] = lr 
+
+            train(epoch, net, args,trainloader,optimizer)
+            test_acc = test(epoch, net,testloader,optimizer)
+            if test_acc >max_val_acc:
+                max_val_acc = test_acc
+
+            print("max_val_acc", max_val_acc)
 
 
-max_val_acc = 0
-lr = 0.1
-for epoch in range(1, nb_epoch+1):
-    if epoch ==150:
-        lr = 0.01
-    if epoch ==225:
-        lr = 0.001
-    optimizer.param_groups[0]['lr'] = lr
-    optimizer.param_groups[1]['lr'] = lr 
-    for param_group in optimizer.param_groups:
-        print(param_group['lr'])
-    train(epoch)
-    val_acc = test(epoch)
-    if val_acc >max_val_acc:
-        max_val_acc = val_acc
-        torch.save(net.state_dict(), store_name+'.pth')
-
-print(max_val_acc)
-
+    except Exception as exception:
+        logger.exception(exception)
+        raise
 
