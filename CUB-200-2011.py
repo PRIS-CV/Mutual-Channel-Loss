@@ -159,7 +159,7 @@ class model_bn(nn.Module):
         x = self.features_2(x)
 
         if self.training:
-            MC_loss_1 = supervisor(x,targets,height=14,cnum=3)
+            MC_loss = supervisor(x,targets,height=14,cnum=3)
 
         x = self.max(x)
         x = x.view(x.size(0), -1)
@@ -167,7 +167,7 @@ class model_bn(nn.Module):
         loss = criterion(x, targets)
 
         if self.training:
-            return x, loss, MC_loss_1
+            return x, loss, MC_loss
         else:
             return x, loss
 
@@ -205,9 +205,9 @@ def train(epoch,net, args, trainloader,optimizer):
         inputs, targets = inputs.cuda(), targets.cuda()
         optimizer.zero_grad()
         inputs, targets = Variable(inputs), Variable(targets)
-        out, ce_loss, MC_loss_1 = net(inputs, targets)
+        out, ce_loss, MC_loss = net(inputs, targets)
 
-        loss = ce_loss + args["alpha_1"] * (MC_loss_1[0] +   args["beta_1"]  * MC_loss_1[1]) 
+        loss = ce_loss + args["alpha_1"] * (MC_loss[0] +   args["beta_1"]  * MC_loss[1]) 
 
         loss.backward()
         optimizer.step()
@@ -273,10 +273,10 @@ def get_params():
     # Training settings
     parser = argparse.ArgumentParser(description='PyTorch MC2_AutoML Example')
 
-    parser.add_argument('--alpha_1', type=float, default=2, metavar='ALPHA',
-                        help='alpha_1 value (default: 1.5)')
-    parser.add_argument('--beta_1', type=float, default=10, metavar='BETA',
-                        help='beta_1 value (default: 10)')
+    parser.add_argument('--alpha_1', type=float, default=2.0, metavar='ALPHA',
+                        help='alpha_1 value (default: 2.0)')
+    parser.add_argument('--beta_1', type=float, default=10.0, metavar='BETA',
+                        help='beta_1 value (default: 10.0)')
 
     args, _ = parser.parse_known_args()
     return args
