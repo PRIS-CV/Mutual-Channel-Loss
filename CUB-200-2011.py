@@ -207,7 +207,7 @@ def train(epoch,net, args, trainloader,optimizer):
         inputs, targets = Variable(inputs), Variable(targets)
         out, ce_loss, MC_loss = net(inputs, targets)
 
-        loss = ce_loss + args["alpha_1"] * (MC_loss[0] +   args["beta_1"]  * MC_loss[1]) 
+        loss = ce_loss + args["alpha_1"] * MC_loss[0] +   args["beta_1"]  * MC_loss[1] 
 
         loss.backward()
         optimizer.step()
@@ -275,8 +275,8 @@ def get_params():
 
     parser.add_argument('--alpha_1', type=float, default=2.0, metavar='ALPHA',
                         help='alpha_1 value (default: 2.0)')
-    parser.add_argument('--beta_1', type=float, default=10.0, metavar='BETA',
-                        help='beta_1 value (default: 10.0)')
+    parser.add_argument('--beta_1', type=float, default=20.0, metavar='BETA',
+                        help='beta_1 value (default: 20.0)')
 
     args, _ = parser.parse_known_args()
     return args
