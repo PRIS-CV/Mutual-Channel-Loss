@@ -283,11 +283,7 @@ def get_params():
 
 if __name__ == '__main__':
     try:
-        # get parameters form tuner
-        tuner_params = nni.get_next_parameter()
-        logger.debug(tuner_params)
         args = vars(get_params())
-        args.update(tuner_params)
         print(args)
         # main(params)
         max_val_acc = 0
