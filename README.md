@@ -41,10 +41,7 @@ If you find this paper useful in your research, please consider citing:
 author={D. {Chang} and Y. {Ding} and J. {Xie} and A. K. {Bhunia} and X. {Li} and Z. {Ma} and M. {Wu} and J. {Guo} and Y. {Song}}, 
 journal={IEEE Transactions on Image Processing}, 
 title={The Devil is in the Channels: Mutual-Channel Loss for Fine-Grained Image Classification}, 
-year={2020}, 
-volume={29}, 
-number={}, 
-pages={4683-4695}, 
+year={2020}, volume={29}, number={}, pages={4683-4695}, 
 doi={10.1109/TIP.2020.2973812}, 
 ISSN={1941-0042}, 
 month={},} 
