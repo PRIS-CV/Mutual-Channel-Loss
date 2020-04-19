@@ -23,9 +23,9 @@ Code release for The Devil is in the Channels: Mutual-Channel Loss for Fine-Grai
 - Description : PyTorch CUB-200-2011 Training with VGG16 (TRAINED FROM SCRATCH).
 
 ## Hyper-parameter
-Loss = ce_loss + alpha_1 * L_dis + beta_1 * L_div <the figure is plot by NNI>
+Loss = ce_loss + alpha_1 * L_dis + beta_1 * L_div  
 ![Hyper-parameter](https://github.com/dongliangchang/Mutual-Channel-Loss/blob/master/Hyper-parameter.jpg)
-
+The figure is plot by NNI.
 
 
 
