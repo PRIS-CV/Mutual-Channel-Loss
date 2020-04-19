@@ -5,8 +5,8 @@ Code release for The Devil is in the Channels: Mutual-Channel Loss for Fine-Grai
 
 
 ## Changelog
-2020/04/19 add the hyper-parameter fine-tune results. 
-2020/04/18 clean the code for better understanding.
+- 2020/04/19 add the hyper-parameter fine-tune results. 
+- 2020/04/18 clean the code for better understanding.
 
 ## Dataset
 ### CUB-200-2011
