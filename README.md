@@ -25,6 +25,7 @@ Code release for The Devil is in the Channels: Mutual-Channel Loss for Fine-Grai
 ## Hyper-parameter
 Loss = ce_loss + alpha_1 * L_dis + beta_1 * L_div  
 ![Hyper-parameter_1](https://github.com/dongliangchang/Mutual-Channel-Loss/blob/master/Hyper-parameter_1.jpg)
+
 ![Hyper-parameter_2](https://github.com/dongliangchang/Mutual-Channel-Loss/blob/master/Hyper-parameter_2.jpg)
 The figure is plot by NNI.
 
