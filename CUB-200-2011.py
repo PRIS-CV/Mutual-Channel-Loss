@@ -45,10 +45,10 @@ transform_test = transforms.Compose([
 ])
 
 
-trainset    = torchvision.datasets.ImageFolder(root='/home/data/Birds2/train', transform=transform_train)
+trainset    = torchvision.datasets.ImageFolder(root='/home/data/Birds/train', transform=transform_train)
 trainloader = torch.utils.data.DataLoader(trainset, batch_size=32, shuffle=True, num_workers=16, drop_last = True)
 
-testset = torchvision.datasets.ImageFolder(root='/home/data/Birds2/test', transform=transform_test)
+testset = torchvision.datasets.ImageFolder(root='/home/data/Birds/test', transform=transform_test)
 testloader = torch.utils.data.DataLoader(testset, batch_size=32, shuffle=True, num_workers=16)
 
 
