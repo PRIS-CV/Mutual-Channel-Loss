@@ -273,7 +273,7 @@ def get_params():
     # Training settings
     parser = argparse.ArgumentParser(description='PyTorch MC2_AutoML Example')
 
-    parser.add_argument('--alpha_1', type=float, default=2.0, metavar='ALPHA',
+    parser.add_argument('--alpha_1', type=float, default=1.5, metavar='ALPHA',
                         help='alpha_1 value (default: 2.0)')
     parser.add_argument('--beta_1', type=float, default=20.0, metavar='BETA',
                         help='beta_1 value (default: 20.0)')
