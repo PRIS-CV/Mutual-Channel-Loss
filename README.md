@@ -5,7 +5,7 @@ Code release for The Devil is in the Channels: Mutual-Channel Loss for Fine-Grai
 
 
 ## Changelog
-- 2020/09/14 update CUB-200-2011_ResNet18.py  Training with ResNet18 (TRAINED FROM SCRATCH).
+- 2020/09/14 update the code: CUB-200-2011_ResNet18.py  Training with ResNet18 (TRAINED FROM SCRATCH).
 - 2020/04/19 add the hyper-parameter fine-tune results. 
 - 2020/04/18 clean the code for better understanding.
 
