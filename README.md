@@ -35,6 +35,7 @@ The figure is plot by NNI.
 Other unofficial implements can be found in the following:
 - Kurumi233: This repo integrate the MC-Loss into a class.  [code](https://github.com/Kurumi233/Mutual-Channel-Loss "code") 
 - darcula1993: This repo implement the tf version of the MC-Loss. [code](https://github.com/darcula1993/Mutual-Channel-Loss "code") 
+- Holocron: Implementations of recent Deep Learning tricks in Computer Vision, easily paired up with your favorite framework and model zoo. [code](https://github.com/frgfm/Holocron "code") 
 
 
 ## Citation
